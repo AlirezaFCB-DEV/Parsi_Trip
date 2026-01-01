@@ -1,5 +1,5 @@
 """
-URL configuration for parsi_trip project.
+URL configuration for amazon project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/6.0/topics/http/urls/
