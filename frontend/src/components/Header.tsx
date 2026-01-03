@@ -4,6 +4,7 @@ function Header() {
   return (
     <header>
       <NabBar />
+
     </header>
   );
 }

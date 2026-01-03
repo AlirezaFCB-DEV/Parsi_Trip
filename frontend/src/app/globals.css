@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
+.HeaderMobileColor {
+  background-color: rgb(36, 46, 66);
+}
 
-.HeaderColor {
-    background-color: rgb(36, 46, 66);
+.HeaderLaptopColor {
+  background-color: rgb(19, 25, 33);
 }
