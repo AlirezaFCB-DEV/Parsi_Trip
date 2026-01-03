@@ -8,11 +8,8 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import PlaceIcon from "@mui/icons-material/Place";
 
 import { useState } from "react";
-
-interface ToptionNames {
-  name: string;
-  id: number;
-}
+import useHeaderOptions from "@/services/Header/Header-options/hook";
+import { IoptionNames } from "@/services/Header/Header-options/types";
 
 interface IsignTexts {
   itemOne: string;
@@ -24,41 +21,11 @@ function NabBar() {
     itemOne: "Sign in >",
     itemTwo: "Hello,sign in Account & Lists ",
   });
-
   let [searchFilterList, setSearchFilterList] = useState<boolean>(false);
   const [searchFilterListValue, setSearchFilterListValue] =
     useState<string>("All");
 
-  const optionNames: ToptionNames[] = [
-    { name: "ALL Department", id: 2 },
-    { name: "Arts & craft", id: 3 },
-    { name: "Automotive", id: 4 },
-    { name: "Baby", id: 5 },
-    { name: "Beauty & Personal Care", id: 6 },
-    { name: "Books", id: 7 },
-    { name: "Boy's Fashion", id: 8 },
-    { name: "Computers", id: 9 },
-    { name: "Deals", id: 10 },
-    { name: "Digital Music", id: 11 },
-    { name: "Electronices", id: 12 },
-    { name: "Girl's Fashion", id: 13 },
-    { name: "Health & Household", id: 14 },
-    { name: "Home & Kitchen", id: 15 },
-    { name: "Industrial & Scientific", id: 16 },
-    { name: "Kindle Store", id: 17 },
-    { name: "Luggage", id: 18 },
-    { name: "Men's Fashion", id: 19 },
-    { name: "Movies & TV", id: 20 },
-    { name: "Music , CDs & Vinyl", id: 21 },
-    { name: "Pet Supplies", id: 22 },
-    { name: "Prime Video", id: 23 },
-    { name: "Software", id: 24 },
-    { name: "Sports & Outdoors", id: 25 },
-    { name: "Tools & Home Improvement", id: 26 },
-    { name: "Toys & Games", id: 27 },
-    { name: "Video Games", id: 28 },
-    { name: "Women's Fashion", id: 29 },
-  ];
+  const { data } = useHeaderOptions();
 
   return (
     <nav className="px-3 w-full HeaderMobileColor text-white">
@@ -122,7 +89,7 @@ function NabBar() {
                 : "opacity-0 top-30 -z-20"
             }`}
           >
-            {optionNames.map((item: ToptionNames) => (
+            {data?.map((item: IoptionNames) => (
               <p
                 key={item.id}
                 onClick={() => setSearchFilterListValue(item.name)}
