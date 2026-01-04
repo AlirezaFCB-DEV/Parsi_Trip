@@ -1,3 +1,5 @@
+import random
+
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser , PermissionsMixin
 from .managers import CustomUserManager
@@ -22,3 +24,15 @@ class User (AbstractBaseUser , PermissionsMixin) :
         return self.email
     
 
+class OTP (models.Model) :
+    user = models.OneToOneField("User" , on_delete=models.CASCADE)
+    code = models.CharField(max_length=6)
+    attempts = models.IntegerField(default=0)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    def otp_generator(self) :
+        otp = str(random.randint(100000 , 999999))
+        
+        self.code = otp
+        self.save()
+        return otp
