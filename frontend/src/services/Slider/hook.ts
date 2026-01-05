@@ -9,7 +9,7 @@ function useSlider() {
     queryKey: ["slider"],
 
     queryFn: async () => {
-      const { data } = await axios.get("http://localhost:8000/slider");
+      const { data } = await axios.get("http://localhost:8000/mobileSlider");
 
       return data as Islide[];
     },

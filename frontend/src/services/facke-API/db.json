@@ -41,26 +41,39 @@
     { "id": 9, "nameOne": "Music" },
     { "id": 10, "nameOne": "PC" }
   ],
-  "slider": [
+  "mobileSlider": [
     {
       "id": 1,
-      "videoUrl": "https://m.media-amazon.com/images/I/A1QAN0zPY5L.mp4"
+      "videoUrl": "https://m.media-amazon.com/images/I/A1QAN0zPY5L.mp4",
+      "title": "Make 2026 your year",
+      "content": "Organize your home under USD 30"
     },
     {
       "id": 2,
-      "videoUrl": "https://m.media-amazon.com/images/I/A1ogEAHnzZL.mp4"
+      "videoUrl": "https://m.media-amazon.com/images/I/A1ogEAHnzZL.mp4",
+      "title": "Make 2026 your year",
+      "content": "Shop fitness deals under USD 50"
     },
     {
       "id": 3,
-      "imgUrl": "https://m.media-amazon.com/images/I/51l7ZOsRo7L._SR855,1368_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/51l7ZOsRo7L._SR855,1368_.jpg",
+      "content": "Kitchen must-haves"
     },
     {
       "id": 4,
-      "imgUrl": "https://m.media-amazon.com/images/I/61R7G24e7dL._SR855,1320_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/61R7G24e7dL._SR855,1320_.jpg",
+      "content": "Start looking  sharp"
     },
     {
       "id": 5,
-      "imgUrl": "https://m.media-amazon.com/images/I/61Ld77LHXQL._SR855,1320_.jpg"
+      "imgUrl": "https://m.media-amazon.com/images/I/61Ld77LHXQL._SR855,1320_.jpg",
+      "content": "All things beauty"
     }
+  ],
+  "desktopSlider": [
+    { "id": 1, "imgUrl": "" },
+    { "id": 2, "imgUrl": "" },
+    { "id": 3, "imgUrl": "" },
+    { "id": 4, "imgUrl": "" }
   ]
 }

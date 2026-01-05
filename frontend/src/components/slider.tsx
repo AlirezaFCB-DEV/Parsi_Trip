@@ -16,14 +16,12 @@ function Slider() {
     const video = videoRefs.current[index];
     if (!video) return;
 
-    // اگر همین ویدیو در حال پخشه → pause
     if (playingIndex === index) {
       video.pause();
       setPlayingIndex(null);
       return;
     }
 
-    // ویدیوهای دیگه pause بشن
     videoRefs.current.forEach((v, i) => {
       if (v && i !== index) v.pause();
     });
@@ -34,22 +32,32 @@ function Slider() {
 
   return (
     <div className="flex justify-center items-center">
-      <main className="overflow-auto w-450 gap-3 flex px-3 scrollbar-hide">
+      <main className="overflow-auto w-450 gap-3 flex px-3 scrollbar-hide xl:hidden">
         {data?.map((item: Islide, index: number) => (
           <div
             key={item.id}
-            className="min-w-85 h-120 my-3 rounded-2xl overflow-hidden"
+            className="min-w-72 h-120 my-3 rounded-2xl overflow-hidden"
           >
             {item.imgUrl && (
-              <img
-                src={item.imgUrl}
-                alt=""
-                className="h-full w-full object-cover"
-              />
+              <div className="relative h-full w-full">
+                <p className="absolute top-5 left-5 w-50 font-bold text-3xl">
+                  {item.content}
+                </p>
+                <img
+                  src={item.imgUrl}
+                  alt=""
+                  className="h-full w-full object-cover rounded-2xl"
+                />
+              </div>
             )}
 
             {item.videoUrl && (
               <div className="relative h-full w-full">
+                <div className="absolute top-5 left-5">
+                  <h2>{item.title}</h2>
+                  <p className="font-bold text-3xl w-60">{item.content}</p>
+                </div>
+
                 <video
                   ref={(el) => (videoRefs.current[index] = el)}
                   src={item.videoUrl}
