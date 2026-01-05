@@ -9,6 +9,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import PlaceIcon from "@mui/icons-material/Place";
 
 import HeaderSearchBar from "./HeaderSearchBar";
+import HeaderListitems from "./HeaderListItem";
 
 function NabBar() {
   return (
@@ -58,9 +59,13 @@ function NabBar() {
         </section>
       </div>
 
-      {/* =============== search bar =============== */}
+      {/* =============== Search Bar =============== */}
 
       <HeaderSearchBar />
+
+      {/* =============== List Items =============== */}
+
+      <HeaderListitems />
     </nav>
   );
 }

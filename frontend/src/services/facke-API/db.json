@@ -28,5 +28,17 @@
     { "name": "Toys & Games", "id": 27 },
     { "name": "Video Games", "id": 28 },
     { "name": "Women's Fashion", "id": 29 }
+  ],
+  "headerListItems": [
+    { "id": 1, "nameOne": "Video", "nameTwo": "All" },
+    { "id": 2, "nameOne": "Deals", "nameTwo": "Today's Deals" },
+    { "id": 3, "nameOne": "Amazon Basics", "nameTwo": "Prime Video" },
+    { "id": 4, "nameOne": "Livestreams", "nameTwo": "Registry" },
+    { "id": 5, "nameOne": "Best Sellers", "nameTwo": "Gift Cards" },
+    { "id": 6, "nameOne": "Books", "nameTwo": "Customer Service" },
+    { "id": 7, "nameOne": "Home", "nameTwo": "Sell" },
+    { "id": 8, "nameOne": "New Releases" },
+    { "id": 9, "nameOne": "Music" },
+    { "id": 10, "nameOne": "PC" }
   ]
 }
