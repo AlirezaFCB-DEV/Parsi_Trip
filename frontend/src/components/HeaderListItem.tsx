@@ -18,6 +18,8 @@ function HeaderListitems() {
       setScreenIsBig(window.innerWidth >= 1280);
     };
 
+    checkScreen();
+
     window.addEventListener("resize", checkScreen);
 
     return () => removeEventListener("resize", checkScreen);

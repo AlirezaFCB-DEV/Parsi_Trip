@@ -15,8 +15,8 @@ function NabBar() {
   return (
     <nav className="px-3 w-full HeaderMobileColor text-white">
       <div className="flex justify-between items-center w-full pt-2 xl:pt-0 xl:h-15">
-        <section className="flex flex-row-reverse justify-between items-center xl:w-53">
-          <div className="hidden xl:block text-[13px] mx-auto ml-4">
+        <section className="flex flex-row-reverse justify-between items-center xl:w-53 2xl:w-60">
+          <div className="hidden xl:block text-[13px] mx-auto ml-4 2xl:ml-10">
             <p className="ml-2">Deliver to</p>
             <section className="flex -ml-3">
               <PlaceIcon fontSize="small" />

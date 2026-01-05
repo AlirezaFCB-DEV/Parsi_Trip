@@ -16,7 +16,7 @@ function NavBarOptionList() {
   return (
     <>
       <div
-        className="text-black rounded-l-lg cursor-pointer bg-gray-300 border-r border-gray-500 py-3 pl-2 min-w-15 h-12 hidden overflow-auto xl:flex justify-center items-center whitespace-nowrap"
+        className="text-black rounded-l-lg cursor-pointer bg-gray-300 border-r border-gray-500 pl-2 min-w-15 h-10 hidden overflow-auto xl:flex justify-center items-center whitespace-nowrap"
         onClick={() => setSearchFilterList(!searchFilterList)}
       >
         {searchFilterListValue} <ArrowDropDownIcon />
