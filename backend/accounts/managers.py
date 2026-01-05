@@ -3,7 +3,7 @@ from django.contrib.auth.models import BaseUserManager
 class CustomUserManager(BaseUserManager) :
     def create_user(self , email , phone_number , user_fullname  , password = None) :
         if not email or not phone_number :
-            raise(ValueError("You must send an email and a phone number"))
+            raise ValueError("You must send an email and a phone number")
         
         user = self.model(email = self.normalize_email(email) , phone_number=phone_number , user_fullname=user_fullname)
         
