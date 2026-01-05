@@ -40,5 +40,27 @@
     { "id": 8, "nameOne": "New Releases" },
     { "id": 9, "nameOne": "Music" },
     { "id": 10, "nameOne": "PC" }
+  ],
+  "slider": [
+    {
+      "id": 1,
+      "videoUrl": "https://m.media-amazon.com/images/I/A1QAN0zPY5L.mp4"
+    },
+    {
+      "id": 2,
+      "videoUrl": "https://m.media-amazon.com/images/I/A1ogEAHnzZL.mp4"
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://m.media-amazon.com/images/I/51l7ZOsRo7L._SR855,1368_.jpg"
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://m.media-amazon.com/images/I/61R7G24e7dL._SR855,1320_.jpg"
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://m.media-amazon.com/images/I/61Ld77LHXQL._SR855,1320_.jpg"
+    }
   ]
 }
