@@ -71,9 +71,21 @@
     }
   ],
   "desktopSlider": [
-    { "id": 1, "imgUrl": "" },
-    { "id": 2, "imgUrl": "" },
-    { "id": 3, "imgUrl": "" },
-    { "id": 4, "imgUrl": "" }
+    {
+      "id": 1,
+      "imgUrl": "https://m.media-amazon.com/images/I/71GGl3UpyOL._SX3000_.jpg"
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://m.media-amazon.com/images/I/619geyiQI5L._SX3000_.jpg"
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://m.media-amazon.com/images/I/61Yx5-N155L._SX3000_.jpg"
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://m.media-amazon.com/images/I/71qcoYgEhzL._SX3000_.jpg"
+    }
   ]
 }
