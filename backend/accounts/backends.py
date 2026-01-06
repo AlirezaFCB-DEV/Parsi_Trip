@@ -21,18 +21,19 @@ class EmailOrPhoneBackend(ModelBackend) :
                 return user if user.check_password(password) else None
             
             if otp :
-                return user if self.verify_otp(user , otp) else None
+                return user if self.verify_otp(lookup_id , otp) else None
         
         except User.DoesNotExist :
             return None
     
-    def verify_otp(self , user_obj , otp_code) :
+    def verify_otp(self , identifier , otp_code) :
         try :
-            otp_record = OTP.objects.get(user=user_obj)
+            otp_record = OTP.objects.get(identifier=identifier)
             
             if otp_record.code == otp_code :
                 
-                if otp_record.created_at + timedelta(minutes=2) < timezone.now():
+                if otp_record.created_at + timedelta(minutes=2) < timezone.now() or otp_record.attempts > 3:
+                    otp_record.delete()
                     return False
                 
                 otp_record.delete()
@@ -41,9 +42,6 @@ class EmailOrPhoneBackend(ModelBackend) :
             else :
                 otp_record.attempts += 1
                 otp_record.save()
-                
-                if otp_record.attempts > 3 :
-                    otp_record.delete()
                 
                 return False
             

@@ -1,4 +1,5 @@
 import re
+import random
 
 def is_email (email) :
     # email pattern
@@ -8,3 +9,7 @@ def is_email (email) :
 def is_phone(phone_number) :
     pattern = r"^\+?\d{10,15}$"
     return re.match(pattern , phone_number) is not None
+
+def otp_generator() :
+        otp = str(random.randint(100000 , 999999))
+        return otp
