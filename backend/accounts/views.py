@@ -15,10 +15,10 @@ def otp_sender(req):
     otp = OTP.objects.create(identifier = identifier, code = otp_generator())
 
     if is_email(identifier):
-        return Response({"data": {"sended_email": identifier, "code": otp.code}})
+        return Response({"data": {"sender_email": identifier, "code": otp.code}})
 
     elif is_phone(identifier):
-        return Response({"data": {"sended_phone": identifier, "code": otp.code}})
+        return Response({"data": {"sender_phone": identifier, "code": otp.code}})
 
     else:
         return Response({"err": "Please a correct value"},
