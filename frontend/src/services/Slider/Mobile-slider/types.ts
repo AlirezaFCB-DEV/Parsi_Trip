@@ -1,4 +1,4 @@
-export interface Islide {
+export interface ImobileSlide {
   id: number;
   videoUrl?: string;
   imgUrl?: string;

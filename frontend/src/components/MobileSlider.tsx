@@ -3,11 +3,11 @@
 import PauseIcon from "@mui/icons-material/Pause";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
-import useSlider from "@/services/Slider/hook";
-import { Islide } from "@/services/Slider/types";
+import { ImobileSlide } from "@/services/Slider/Mobile-slider/types";
 import { useRef, useState } from "react";
+import useSlider from "@/services/Slider/Mobile-slider/hook";
 
-function Slider() {
+function MobileSlider() {
   const { data } = useSlider();
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
@@ -33,7 +33,7 @@ function Slider() {
   return (
     <div className="flex justify-center items-center">
       <main className="overflow-auto w-450 gap-3 flex px-3 scrollbar-hide xl:hidden">
-        {data?.map((item: Islide, index: number) => (
+        {data?.map((item: ImobileSlide, index: number) => (
           <div
             key={item.id}
             className="min-w-72 h-120 my-3 rounded-2xl overflow-hidden"
@@ -59,7 +59,9 @@ function Slider() {
                 </div>
 
                 <video
-                  ref={(el) => (videoRefs.current[index] = el)}
+                  ref={(el) => {
+                    videoRefs.current[index] = el;
+                  }}
                   src={item.videoUrl}
                   className="h-full w-full object-cover"
                   playsInline
@@ -81,4 +83,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default MobileSlider;
