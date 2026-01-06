@@ -32,7 +32,8 @@ class EmailOrPhoneBackend(ModelBackend) :
             
             if otp_record.code == otp_code :
                 
-                if otp_record.created_at + timedelta(minutes=2) < timezone.now():
+                if otp_record.created_at + timedelta(minutes=2) < timezone.now() or otp_record.attempts > 3:
+                    otp_record.delete()
                     return False
                 
                 otp_record.delete()
@@ -41,9 +42,6 @@ class EmailOrPhoneBackend(ModelBackend) :
             else :
                 otp_record.attempts += 1
                 otp_record.save()
-                
-                if otp_record.attempts > 3 :
-                    otp_record.delete()
                 
                 return False
             
