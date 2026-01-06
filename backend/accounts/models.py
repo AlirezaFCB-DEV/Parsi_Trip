@@ -8,7 +8,7 @@ from .managers import CustomUserManager
 
 class User (AbstractBaseUser , PermissionsMixin) :
     email =  models.EmailField(unique=True)
-    phone_number = models.CharField(max_length=11 ,  unique=True)
+    phone_number = models.CharField(max_length=15 ,  unique=True)
     user_fullname = models.CharField(max_length=150)
     
     is_active = models.BooleanField(default=True)
@@ -25,14 +25,10 @@ class User (AbstractBaseUser , PermissionsMixin) :
     
 
 class OTP (models.Model) :
-    user = models.OneToOneField("User" , on_delete=models.CASCADE)
+    identifier = models.CharField(max_length=100)
     code = models.CharField(max_length=6)
     attempts = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
-    
-    def otp_generator(self) :
-        otp = str(random.randint(100000 , 999999))
-        
-        self.code = otp
-        self.save()
-        return otp
+
+    def __str__(self):
+        return self.identifier
