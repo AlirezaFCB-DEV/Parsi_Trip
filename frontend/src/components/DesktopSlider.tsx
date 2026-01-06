@@ -7,6 +7,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 import useDesktopSlider from "@/services/Slider/Desktop-slider/hook";
 import { useState } from "react";
+import Swiper from "swiper";
 
 function DesktopSlider() {
   const { data = [] } = useDesktopSlider();
