@@ -11,6 +11,9 @@ from .models import OTP, User
 @api_view(["GET"])
 def otp_sender(req):
     identifier = req.GET.get("identifier")
+    
+    if not identifier :
+        return Response({"error" : "you must send a query param : identifier:(email or phone)"} , status=status.HTTP_400_BAD_REQUEST)
 
     otp = OTP.objects.create(identifier=identifier, code=otp_generator())
 
