@@ -15,19 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <header>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-        />
-      </header>
       <body>
         <RQProvider>
           <Header />
           {children}
         </RQProvider>
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
       </body>
     </html>
   );
