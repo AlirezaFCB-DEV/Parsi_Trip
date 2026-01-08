@@ -31,4 +31,4 @@ class OTP (models.Model) :
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.identifier
+        return f"{self.identifier} - {self.code}"
