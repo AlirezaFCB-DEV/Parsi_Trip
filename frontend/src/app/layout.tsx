@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import RQProvider from "@/context/RQProvider";
+import ContainerContextProvider from "@/context/container";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,10 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <RQProvider>
-          <Header />
-          {children}
-        </RQProvider>
+        <ContainerContextProvider>
+          <RQProvider>
+            <Header />
+            {children}
+          </RQProvider>
+        </ContainerContextProvider>
       </body>
     </html>
   );

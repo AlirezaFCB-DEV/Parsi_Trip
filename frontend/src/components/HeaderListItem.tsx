@@ -10,10 +10,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import DesktopAllMenu from "./DesktopAllMenu";
+import { useContainerContext } from "@/context/container";
 
 function HeaderListitems() {
   const { data } = useListItems();
-  const [isOpenList, setIsOpenList] = useState<boolean>(false);
+  const { isOpenList, HandleIsOpenList } = useContainerContext();
 
   let [screenIsBig, setScreenIsBig] = useState<boolean | null>(null);
 
@@ -28,10 +29,6 @@ function HeaderListitems() {
 
     return () => removeEventListener("resize", checkScreen);
   }, []);
-
-  const HandleIsOpenList = () => {
-    setIsOpenList((prev) => !prev);
-  };
 
   if (screenIsBig == null) return null;
 
@@ -56,13 +53,16 @@ function HeaderListitems() {
               isOpenList ? "translate-x-0" : "-translate-x-100"
             }`}
           >
-            <div className="HeaderMobileColor w-full py-2 text-white flex justify-start items-center px-5">
+            <div className="HeaderMobileColor w-full py-2 text-white flex justify-start items-center px-5 cursor-pointer">
               <AccountCircleIcon fontSize="large" />
               <p className="ml-2 font-bold text-xl">Hello, sign in</p>
             </div>
 
             <div className="overflow-auto flex flex-col justify-between items-start w-full text-black border-b">
-              <DesktopAllMenu />
+              <DesktopAllMenu title="Digital Content & Devices" />
+              <DesktopAllMenu title="item 2" />
+              <DesktopAllMenu title="item 3" />
+              <DesktopAllMenu title="item 4" />
             </div>
           </div>
           <div
