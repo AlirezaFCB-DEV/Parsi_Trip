@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import DesktopAllMenu from "./DesktopAllMenuItem";
+import DesktopAllMenu from "./DesktopAllMenu";
 
 function HeaderListitems() {
   const { data } = useListItems();
@@ -44,6 +44,8 @@ function HeaderListitems() {
           </div>
         )}
 
+        {/* =============== Open Desktop Panel =============== */}
+
         <div
           className={`bg-black/60 absolute top-0 bottom-0 left-0 right-0 transition-all duration-500 ease-in-out ${
             isOpenList ? "opacity-100 z-100" : "opacity-0 -z-10"
@@ -60,16 +62,7 @@ function HeaderListitems() {
             </div>
 
             <div className="overflow-auto flex flex-col justify-between items-start w-full text-black border-b">
-              <div className="flex flex-col justify-between items-start w-full">
-                <h2 className="font-bold text-xl p-5">
-                  Digital Content & Devices
-                </h2>
-
-                <DesktopAllMenu content="Electronics" />
-                <DesktopAllMenu content="AmazonMusic" />
-                <DesktopAllMenu content="Kindle E-readers Books" />
-                <DesktopAllMenu content="Amazon Appstore" />
-              </div>
+              <DesktopAllMenu />
             </div>
           </div>
           <div
@@ -82,8 +75,10 @@ function HeaderListitems() {
           </div>
         </div>
 
+        {/* =============== List Items =============== */}
+
         {data?.map((item: IlistItems) => (
-          <li key={item.id} className="cursor-pointer mr-5">
+          <li key={item.id} className={`cursor-pointer mr-5`}>
             {screenIsBig ? item.nameTwo : item.nameOne}
           </li>
         ))}
