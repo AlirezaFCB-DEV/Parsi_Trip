@@ -20,7 +20,7 @@ function DesktopAllMenu({
 }) {
   return (
     <div className="flex flex-col justify-between items-start w-full border-b border-gray-600">
-      <h2 className="font-bold text-xl p-5">{title}</h2>
+      <h2 className="font-bold text-lg lg:text-xl p-5">{title}</h2>
 
       <DesktopAllMenuItem content={titleItemOne} />
 

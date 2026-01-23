@@ -49,7 +49,7 @@ function HeaderListitems() {
           }`}
         >
           <div
-            className={`absolute top-0 left-0 bottom-0 w-100 h-full bg-white z-30 transition-all duration-500 ease-in-out flex flex-col justify-start items-center ${
+            className={`absolute top-0 left-0 bottom-0 w-70 sm:w-100 h-full bg-white z-30 transition-all duration-500 ease-in-out flex flex-col justify-start items-center ${
               isOpenList ? "translate-x-0" : "-translate-x-100"
             }`}
           >
@@ -85,7 +85,7 @@ function HeaderListitems() {
             </div>
           </div>
           <div
-            className={`absolute top-0 left-100 z-100 transition-all duration-500 ease-in-out p-1 pt-3 rounded cursor-pointer m-1 ${
+            className={`absolute top-0 left-70 sm:left-100 z-100 transition-all duration-500 ease-in-out p-1 pt-3 rounded cursor-pointer m-1 ${
               isOpenList ? "translate-x-0" : "-translate-x-100"
             }`}
             onClick={HandleIsOpenList}
