@@ -9,20 +9,32 @@ function DesktopAllMenu({
   titleItemFour,
   newItemOne,
   newItemTwo,
+  DesktopAllMenu,
+  HandleDesktopAllMenu,
 }: {
   title: string;
   titleItemOne: string;
   titleItemTwo?: string;
   titleItemThree: string;
   titleItemFour: string;
+
+  // =============== New Items Props ===============
+
   newItemOne?: string;
   newItemTwo?: string;
+
+  // =============== Context Datas ===============
+
+  DesktopAllMenu?: boolean;
+  HandleDesktopAllMenu?: () => void;
 }) {
   return (
     <div className="flex flex-col justify-between items-start w-full border-b border-gray-600">
       <h2 className="font-bold text-lg lg:text-xl p-5">{title}</h2>
 
-      <DesktopAllMenuItem content={titleItemOne} />
+      <div className="flex flex-col justify-between items-start w-full" onClick={HandleDesktopAllMenu}>
+        <DesktopAllMenuItem content={titleItemOne} />
+      </div>
 
       <div
         className={`${

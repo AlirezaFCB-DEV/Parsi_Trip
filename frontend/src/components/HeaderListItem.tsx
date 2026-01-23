@@ -11,10 +11,16 @@ import CloseIcon from "@mui/icons-material/Close";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import DesktopAllMenu from "./DesktopAllMenu";
 import { useContainerContext } from "@/context/container";
+import DesktopAllMenuItemPages from "./DesktopAllMenuItemPages";
 
 function HeaderListitems() {
   const { data } = useListItems();
-  const { isOpenList, HandleIsOpenList } = useContainerContext();
+  const {
+    isOpenList,
+    HandleIsOpenList,
+    desktopAllMenuItemPage,
+    HandleDesktopAllMenuItemPages,
+  } = useContainerContext();
 
   let [screenIsBig, setScreenIsBig] = useState<boolean | null>(null);
 
@@ -58,13 +64,33 @@ function HeaderListitems() {
               <p className="ml-2 font-bold text-xl">Hello, sign in</p>
             </div>
 
-            <div className="overflow-auto flex flex-col justify-between items-start w-full text-black border-b">
+            {/* =============== Desktop All Menu Item pages =============== */}
+
+            <div
+              className={`w-full h-full absolute top-12.5 left-0 bg-white text-white flex transition-all duration-500 ease-in-out ${
+                desktopAllMenuItemPage
+                  ? "translate-x-0 opacity-100"
+                  : "opacity-0 translate-x-100"
+              }`}
+            >
+              <DesktopAllMenuItemPages
+                HandleDesktopAllMenuItemPage={HandleDesktopAllMenuItemPages}
+              />
+            </div>
+
+            <div
+              className={`overflow-auto ${
+                desktopAllMenuItemPage ? "-translate-x-100" : "translate-x-0"
+              } flex flex-col justify-between items-start w-full text-black border-b transition-all duration-500 ease-in-out`}
+            >
               <DesktopAllMenu
                 title="Digital Content & Devices"
                 titleItemOne="Prime Video"
                 titleItemTwo="Amazon Music"
                 titleItemThree="Kindle E-readers Books"
                 titleItemFour="Amazon Appstore"
+                DesktopAllMenu={desktopAllMenuItemPage}
+                HandleDesktopAllMenu={HandleDesktopAllMenuItemPages}
               />
               <DesktopAllMenu
                 title="Shop by Department"
