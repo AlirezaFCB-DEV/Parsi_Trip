@@ -59,10 +59,29 @@ function HeaderListitems() {
             </div>
 
             <div className="overflow-auto flex flex-col justify-between items-start w-full text-black border-b">
-              <DesktopAllMenu title="Digital Content & Devices" />
-              <DesktopAllMenu title="item 2" />
-              <DesktopAllMenu title="item 3" />
-              <DesktopAllMenu title="item 4" />
+              <DesktopAllMenu
+                title="Digital Content & Devices"
+                titleItemOne="Prime Video"
+                titleItemTwo="Amazon Music"
+                titleItemThree="Kindle E-readers Books"
+                titleItemFour="Amazon Appstore"
+              />
+              <DesktopAllMenu
+                title="Shop by Department"
+                titleItemOne="Electronics"
+                titleItemTwo="Computers"
+                titleItemThree="Smart home"
+                titleItemFour="Arts & Crafts"
+                newItemTwo="See All"
+              />
+              <DesktopAllMenu
+                title="Programs & Features"
+                titleItemOne="Gift Cards"
+                titleItemThree="Amazon Live"
+                titleItemFour="International Shopping"
+                newItemOne="Shop By Interest"
+                newItemTwo="See All"
+              />
             </div>
           </div>
           <div

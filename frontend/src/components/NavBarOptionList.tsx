@@ -22,7 +22,7 @@ function NavBarOptionList() {
         {searchFilterListValue} <ArrowDropDownIcon />
       </div>
       <div
-        className={`bg-gray-300 p-2 w-60 absolute left-0 rounded-b-lg transition-all duration-500 flex flex-col justify-between items-start ${
+        className={`bg-gray-300 w-60 overflow-auto h-150 scrollbar-hide absolute left-0 rounded-lg transition-all duration-500 flex flex-col justify-between items-start ${
           searchFilterList
             ? "opacity-100 top-12 z-20 text-black"
             : "opacity-0 top-30 -z-20"
@@ -35,7 +35,7 @@ function NavBarOptionList() {
               setSearchFilterListValue(item.name);
               setSearchFilterList(false);
             }}
-            className="transition-all duration-100 ease-in-out hover:bg-gray-400 cursor-pointer w-full"
+            className="transition-all duration-100 ease-in-out hover:bg-gray-400 cursor-pointer w-full p-1"
           >
             {item.name}
           </p>
