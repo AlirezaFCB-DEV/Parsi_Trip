@@ -1,4 +1,6 @@
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import DesktopAllMenuItemPagesItem from "./DesktopAllMenuItemPagesItem";
+import React from "react";
 
 function DesktopAllMenuItemPages({
   HandleDesktopAllMenuItemPage,
@@ -17,14 +19,13 @@ function DesktopAllMenuItemPages({
       </header>
 
       <main className="w-full p-3 flex flex-col justify-start items-start px-10 gap-4">
-        <h1 className="text-xl font-bold">Prime Video</h1>
+        <h1 className="text-xl font-bold">test</h1>
 
-        <ul className="gap-4 w-full flex flex-col justify-start items-start">
-          <li>All Videos</li>
-          <li>d,vndfnlk</li>
-          <li>dfgfg</li>
-          <li>sgdfgg</li>
-          <li> hythth t</li>
+        <ul className="w-full flex flex-col justify-start items-start">
+          <DesktopAllMenuItemPagesItem content="test" />
+          <DesktopAllMenuItemPagesItem content="test" />
+          <DesktopAllMenuItemPagesItem content="test" />
+          <DesktopAllMenuItemPagesItem content="test" />
         </ul>
       </main>
     </div>

@@ -1,3 +1,4 @@
+import React from "react";
 import DesktopAllMenuItem from "./DesktopAllMenuItem";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
@@ -9,7 +10,6 @@ function DesktopAllMenu({
   titleItemFour,
   newItemOne,
   newItemTwo,
-  DesktopAllMenu,
   HandleDesktopAllMenu,
 }: {
   title: string;
@@ -25,18 +25,21 @@ function DesktopAllMenu({
 
   // =============== Context Datas ===============
 
-  DesktopAllMenu?: boolean;
-  HandleDesktopAllMenu?: () => void;
+  HandleDesktopAllMenu: () => void;
 }) {
   return (
     <div className="flex flex-col justify-between items-start w-full border-b border-gray-600">
       <h2 className="font-bold text-lg lg:text-xl p-5">{title}</h2>
 
-      <div className="flex flex-col justify-between items-start w-full" onClick={HandleDesktopAllMenu}>
+      <div
+        className="flex flex-col justify-between items-start w-full"
+        onClick={HandleDesktopAllMenu}
+      >
         <DesktopAllMenuItem content={titleItemOne} />
       </div>
 
       <div
+        onClick={HandleDesktopAllMenu}
         className={`${
           titleItemTwo
             ? "flex flex-col justify-between items-start w-full"
@@ -54,9 +57,19 @@ function DesktopAllMenu({
         {newItemOne}
       </p>
 
-      <DesktopAllMenuItem content={titleItemThree} />
+      <div
+        onClick={HandleDesktopAllMenu}
+        className="flex flex-col justify-between items-start w-full"
+      >
+        <DesktopAllMenuItem content={titleItemThree} />
+      </div>
 
-      <DesktopAllMenuItem content={titleItemFour} />
+      <div
+        onClick={HandleDesktopAllMenu}
+        className="flex flex-col justify-between items-start w-full"
+      >
+        <DesktopAllMenuItem content={titleItemFour} />
+      </div>
 
       <p
         className={`cursor-pointer text-sm p-4 hover:bg-gray-200 w-full ${

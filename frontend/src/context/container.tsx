@@ -7,6 +7,7 @@ interface IcontainerContext {
   HandleIsOpenList: () => void;
 
   desktopAllMenuItemPage: boolean;
+  setDesktopAllMenuItemPage: React.Dispatch<React.SetStateAction<boolean>>;
   HandleDesktopAllMenuItemPages: () => void;
 }
 
@@ -38,6 +39,7 @@ function ContainerContextProvider({ children }: { children: React.ReactNode }) {
         isOpenList,
         HandleIsOpenList,
         desktopAllMenuItemPage,
+        setDesktopAllMenuItemPage,
         HandleDesktopAllMenuItemPages,
       }}
     >

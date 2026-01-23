@@ -64,20 +64,6 @@ function HeaderListitems() {
               <p className="ml-2 font-bold text-xl">Hello, sign in</p>
             </div>
 
-            {/* =============== Desktop All Menu Item pages =============== */}
-
-            <div
-              className={`w-full h-full absolute top-12.5 left-0 bg-white text-white flex transition-all duration-500 ease-in-out ${
-                desktopAllMenuItemPage
-                  ? "translate-x-0 opacity-100"
-                  : "opacity-0 translate-x-100"
-              }`}
-            >
-              <DesktopAllMenuItemPages
-                HandleDesktopAllMenuItemPage={HandleDesktopAllMenuItemPages}
-              />
-            </div>
-
             <div
               className={`overflow-auto ${
                 desktopAllMenuItemPage ? "-translate-x-100" : "translate-x-0"
@@ -89,7 +75,6 @@ function HeaderListitems() {
                 titleItemTwo="Amazon Music"
                 titleItemThree="Kindle E-readers Books"
                 titleItemFour="Amazon Appstore"
-                DesktopAllMenu={desktopAllMenuItemPage}
                 HandleDesktopAllMenu={HandleDesktopAllMenuItemPages}
               />
               <DesktopAllMenu
@@ -99,6 +84,7 @@ function HeaderListitems() {
                 titleItemThree="Smart home"
                 titleItemFour="Arts & Crafts"
                 newItemTwo="See All"
+                HandleDesktopAllMenu={HandleDesktopAllMenuItemPages}
               />
               <DesktopAllMenu
                 title="Programs & Features"
@@ -107,6 +93,21 @@ function HeaderListitems() {
                 titleItemFour="International Shopping"
                 newItemOne="Shop By Interest"
                 newItemTwo="See All"
+                HandleDesktopAllMenu={HandleDesktopAllMenuItemPages}
+              />
+            </div>
+
+            {/* =============== Desktop All Menu Item pages =============== */}
+
+            <div
+              className={`w-full h-full absolute top-12.5 left-0 bg-white text-white flex transition-all duration-500 ease-in-out ${
+                desktopAllMenuItemPage
+                  ? "translate-x-0 opacity-100"
+                  : "opacity-0 translate-x-100"
+              }`}
+            >
+              <DesktopAllMenuItemPages
+                HandleDesktopAllMenuItemPage={HandleDesktopAllMenuItemPages}
               />
             </div>
           </div>
