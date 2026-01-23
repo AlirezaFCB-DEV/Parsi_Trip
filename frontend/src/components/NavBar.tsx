@@ -10,8 +10,11 @@ import PlaceIcon from "@mui/icons-material/Place";
 
 import HeaderSearchBar from "./HeaderSearchBar";
 import HeaderListitems from "./HeaderListItem";
+import { useContainerContext } from "@/context/container";
 
 function NabBar() {
+  const { HandleIsOpenList } = useContainerContext();
+
   return (
     <nav className="px-3 w-full HeaderMobileColor text-white">
       <div className="flex justify-between items-center w-full pt-2 xl:pt-0 xl:h-15">
@@ -29,8 +32,8 @@ function NabBar() {
             alt="navbar-img"
             className="w-20 mt-3 ml-3 xl:ml-0"
           />
-          <div className="xl:hidden">
-            <MenuIcon className="cursor-pointer" />
+          <div className="xl:hidden cursor-pointer" onClick={HandleIsOpenList}>
+            <MenuIcon />
           </div>
         </section>
 

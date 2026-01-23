@@ -9,7 +9,7 @@ import useDesktopSlider from "@/services/Slider/Desktop-slider/hook";
 import { useState } from "react";
 
 function DesktopSlider() {
-  const { data = [] } = useDesktopSlider();
+  const { data = [], isLoading, isRefetching, error } = useDesktopSlider();
 
   let [count, setCount] = useState(0);
   const slide = data[count];
