@@ -24,7 +24,7 @@ def verify_otp(identifier , otp_code) :
             
             if otp_record.code == otp_code :
                 
-                if otp_record.created_at + timedelta(minutes=2) < timezone.now() or otp_record.attempts > 3:
+                if otp_record.created_at + timedelta(minutes=2) < timezone.now():
                     otp_record.delete()
                     return False
                 
@@ -34,6 +34,9 @@ def verify_otp(identifier , otp_code) :
             else :
                 otp_record.attempts += 1
                 otp_record.save()
+                
+                if otp_record.attempts >= 3:
+                    otp_record.delete()
                 
                 return False
             
