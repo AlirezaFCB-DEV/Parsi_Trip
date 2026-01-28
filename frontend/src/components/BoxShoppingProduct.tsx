@@ -13,7 +13,7 @@ function BoxShoppingProduct({
   TitleLinkAnyProducts,
 }: IboxShoppingProduct) {
   return (
-    <div className="w-1/4 h-full bg-white p-3 flex flex-col justify-between items-start gap-3">
+    <main className="w-1/4 h-full bg-white p-3 flex flex-col justify-between items-start gap-3 cursor-pointer">
       <h1 className="font-bold text-lg">{title}</h1>
 
       <div className="w-full h-full p-2 gap-2 grid grid-cols-2">
@@ -50,8 +50,10 @@ function BoxShoppingProduct({
         </div>
       </div>
 
-      <p className="text-sm">shop resort wear</p>
-    </div>
+      <p className="text-sm text-blue-600 hover:border-b">
+        {TitleLinkAnyProducts}
+      </p>
+    </main>
   );
 }
 
