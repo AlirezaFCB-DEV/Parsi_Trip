@@ -3,7 +3,7 @@ import Slider from "@/components/Slider";
 
 export default function Home() {
   return (
-    <>
+    <main className="bg-yellow-50">
       <section>
         <Slider />
       </section>
@@ -11,6 +11,6 @@ export default function Home() {
       <section>
         <BoxShoppingProducts />
       </section>
-    </>
+    </main>
   );
 }
