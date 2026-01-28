@@ -1,3 +1,4 @@
+import BoxShoppingProducts from "@/components/BoxShoppingProducts";
 import Slider from "@/components/Slider";
 
 export default function Home() {
@@ -5,6 +6,10 @@ export default function Home() {
     <>
       <section>
         <Slider />
+      </section>
+
+      <section>
+        <BoxShoppingProducts />
       </section>
     </>
   );
