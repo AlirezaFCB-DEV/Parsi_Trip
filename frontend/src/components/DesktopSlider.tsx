@@ -43,7 +43,7 @@ function DesktopSlider() {
 
   return (
     <main className="hidden xl:block">
-      <div className="container w-full m-auto overflow-auto scrollbar-hide relative flex justify-between items-center">
+      <div className="container w-8/10 m-auto overflow-auto scrollbar-hide relative flex justify-between items-center">
         <div className="w-full flex justify-between items-center z-20 absolute left-0 right-0 top-28 px-5">
           <div onClick={HandlePreviosSlide}>
             <ArrowBackIosIcon fontSize="large" className="cursor-pointer" />
