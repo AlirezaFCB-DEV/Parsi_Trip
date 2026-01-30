@@ -145,55 +145,55 @@
   "boxShoppingProductTwo": [
     {
       "id": 1,
-      "title": "Curated vacation looks",
-      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/2x_Desktop_Quad_card_w_title_-_Card_2_V2._SY116_CB771972006_.jpg",
-      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/1x_Desktop_Quad_card_w_title_-_Card_3_V2._SY116_CB771972006_.jpg",
-      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/1x_Desktop_Quad_card_w_title_-_Card_4_V2._SY116_CB771972006_.jpg",
-      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/2x_Desktop_Quad_card_w_title_-_Card_1_V2._SY116_CB771972006_.jpg",
-      "imgContentOne": "Swim",
-      "imgContentTwo": "Beauty",
-      "imgContentThree": "Accessories",
-      "imgContentFour": "Apparel",
-      "TitleLinkAnyProducts": "Shop resort wear"
+      "title": "Shop Fashion for less",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg",
+      "imgContentOne": "Jeans under $50",
+      "imgContentTwo": "Tops under $25",
+      "imgContentThree": "Deresses under $30",
+      "imgContentFour": "Shoes under $50",
+      "TitleLinkAnyProducts": "see all deals"
     },
     {
       "id": 2,
-      "title": "Find your next investment piece",
-      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Trending_Pre-loved_handbags_5_186x116._SY116_CB804224994_.jpg",
-      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Pre-loved_jewelry_7_186x116._SY116_CB803997880_.jpg",
-      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Pre-loved_jewelry_6_186x116._SY116_CB803997880_.jpg",
-      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Trending_Pre-loved_handbags_8_186x116._SY116_CB804224994_.jpg",
-      "imgContentOne": "Chane!",
-      "imgContentTwo": "Van Cleef",
-      "imgContentThree": "Hermes",
-      "imgContentFour": "Fendi",
-      "TitleLinkAnyProducts": "Shop pre-loved handbags & jewelry"
+      "title": "Fashion trends you like",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_2_x1._SY116_CB595261253_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_3_x1._SY116_CB595261253_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_1_x1._SY116_CB595261253_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg",
+      "imgContentOne": "Deresses",
+      "imgContentTwo": "Knits",
+      "imgContentThree": "Jackets",
+      "imgContentFour": "Jewelry",
+      "TitleLinkAnyProducts": "Explore more"
     },
     {
       "id": 3,
-      "title": "Save on Amazon Devices",
-      "imgUrlOne": "https://m.media-amazon.com/images/I/51d4Vzg0EvL._AC_SY145_.jpg",
-      "imgUrlTwo": "https://m.media-amazon.com/images/I/51qKrbelpDL._AC_SY145_.jpg",
-      "imgUrlThree": "https://m.media-amazon.com/images/I/418sgMKHO-L._AC_SY145_.jpg",
-      "imgUrlFour": "https://m.media-amazon.com/images/I/71d-4tL5F1L._AC_SY145_.jpg",
-      "imgContentOne": "Limited time deal",
-      "imgContentTwo": "Limited time deal",
-      "imgContentThree": "Limited time deal",
-      "imgContentFour": "Limited time deal",
-      "TitleLinkAnyProducts": "See more"
+      "title": "Home upgrades under USD 50",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Dining_B_1x._SY116_CB774262527_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Home_B_1x._SY116_CB774262527_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Kitchen_B_1x._SY116_CB774262527_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Storage_B_1x._SY116_CB774262527_.jpg",
+      "imgContentOne": "Dinnerware",
+      "imgContentTwo": "Home decor",
+      "imgContentThree": "Kitchen",
+      "imgContentFour": "Storage",
+      "TitleLinkAnyProducts": "Score New Year deals"
     },
     {
       "id": 4,
-      "title": "Shop Saks on Amazon",
-      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/Desktop_QC_TopLeft_Editorial_2_1x._SY116_CB773338092_.jpg",
-      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/Desktop_QC_TopRight_Editorial_2_1x._SY116_CB773338092_.jpg",
-      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/Desktop_QC_BottomLeft_Editorial_2_1x._SY116_CB773338092_.jpg",
-      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/Desktop_QC_BottomRight_Editorial_2_1x._SY116_CB773338092_.jpg",
-      "imgContentOne": "Coats & jackets",
-      "imgContentTwo": "Beauty",
-      "imgContentThree": "Shoes",
-      "imgContentFour": "HandBags",
-      "TitleLinkAnyProducts": "Shop Saks on Amazon"
+      "title": "Easy updates for elevated spaces",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_LaundryLuxe_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_AccentFurniture_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Hallway_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgContentOne": "baskets & hampers",
+      "imgContentTwo": "Hardware",
+      "imgContentThree": "Accent furniture",
+      "imgContentFour": "Wallpaper & paint",
+      "TitleLinkAnyProducts": "Shop home products"
     }
   ],
   "boxShoppingProductThree": [
@@ -304,7 +304,7 @@
       "TitleLinkAnyProducts": "Shop Saks on Amazon"
     }
   ],
-  "boxShoppingProductOFive": [
+  "boxShoppingProductFive": [
     {
       "id": 1,
       "title": "Curated vacation looks",
