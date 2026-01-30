@@ -71,7 +71,7 @@ function DesktopSlider() {
 
         <div className="absolute top-10 left-0 right-0 bottom-10 bg-linear-to-b from-black/0 to-black"></div>
       </div>
-      <div className="absolute top-155   left-0 right-0 bottom-0 bg-linear-to-b from-black to-white container w-8/10 h-20 mx-auto"></div>
+      <div className="absolute top-155   left-0 right-0 bottom-0 bg-linear-to-b from-black to-gray-200 container w-8/10 h-20 mx-auto"></div>
     </main>
   );
 }

@@ -3,7 +3,7 @@ import Slider from "@/components/Slider";
 
 export default function Home() {
   return (
-    <main className="bg-yellow-100/70">
+    <main className="bg-gray-200">
       <section>
         <Slider />
       </section>

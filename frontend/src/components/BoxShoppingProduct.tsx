@@ -50,7 +50,7 @@ function BoxShoppingProduct({
         </div>
       </div>
 
-      <p className="text-sm text-blue-600 hover:border-b">
+      <p className="text-sm text-blue-600 hover:text-blue-800">
         {TitleLinkAnyProducts}
       </p>
     </main>
