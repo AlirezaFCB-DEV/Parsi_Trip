@@ -88,7 +88,7 @@
       "imgUrl": "https://m.media-amazon.com/images/I/71qcoYgEhzL._SX3000_.jpg"
     }
   ],
-  "boxShoppingProducts": [
+  "boxShoppingProductOne": [
     {
       "id": 1,
       "title": "Curated vacation looks",
@@ -140,6 +140,168 @@
       "imgContentThree": "Shoes",
       "imgContentFour": "HandBags",
       "TitleLinkAnyProducts": "Shop Saks on Amazon"
+    }
+  ],
+  "boxShoppingProductTwo": [
+    {
+      "id": 1,
+      "title": "Shop Fashion for less",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg",
+      "imgContentOne": "Jeans under $50",
+      "imgContentTwo": "Tops under $25",
+      "imgContentThree": "Deresses under $30",
+      "imgContentFour": "Shoes under $50",
+      "TitleLinkAnyProducts": "see all deals"
+    },
+    {
+      "id": 2,
+      "title": "Fashion trends you like",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_2_x1._SY116_CB595261253_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_3_x1._SY116_CB595261253_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_1_x1._SY116_CB595261253_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg",
+      "imgContentOne": "Deresses",
+      "imgContentTwo": "Knits",
+      "imgContentThree": "Jackets",
+      "imgContentFour": "Jewelry",
+      "TitleLinkAnyProducts": "Explore more"
+    },
+    {
+      "id": 3,
+      "title": "Home upgrades under USD 50",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Dining_B_1x._SY116_CB774262527_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Home_B_1x._SY116_CB774262527_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Kitchen_B_1x._SY116_CB774262527_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Storage_B_1x._SY116_CB774262527_.jpg",
+      "imgContentOne": "Dinnerware",
+      "imgContentTwo": "Home decor",
+      "imgContentThree": "Kitchen",
+      "imgContentFour": "Storage",
+      "TitleLinkAnyProducts": "Score New Year deals"
+    },
+    {
+      "id": 4,
+      "title": "Easy updates for elevated spaces",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_LaundryLuxe_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_AccentFurniture_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Hallway_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgContentOne": "baskets & hampers",
+      "imgContentTwo": "Hardware",
+      "imgContentThree": "Accent furniture",
+      "imgContentFour": "Wallpaper & paint",
+      "TitleLinkAnyProducts": "Shop home products"
+    }
+  ],
+  "boxShoppingProductThree": [
+    {
+      "id": 1,
+      "title": "Level up your beauty routine",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Make-up._SY116_CB558654384_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Brushes._SY116_CB558654384_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Sponges._SY116_CB558654384_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Mirrors._SY116_CB558654384_.jpg",
+      "imgContentOne": "Makeup",
+      "imgContentTwo": "Brushes",
+      "imgContentThree": "Sponges",
+      "imgContentFour": "Mirrors",
+      "TitleLinkAnyProducts": "See more"
+    },
+    {
+      "id": 2,
+      "title": "Gear up to get fit",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Clothing._SY116_CB549022351_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Trackers._SY116_CB549022351_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Equipment._SY116_CB549022351_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Deals_Fitness._SY116_CB549022351_.jpg",
+      "imgContentOne": "Clothing",
+      "imgContentTwo": "Trackers",
+      "imgContentThree": "Equipment",
+      "imgContentFour": "Deals",
+      "TitleLinkAnyProducts": "Discover more"
+    },
+    {
+      "id": 3,
+      "title": "Deals on top categories",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Books._SY116_CB549022351_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Fashion._SY116_CB549022351_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Desktops._SY116_CB549022351_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Beauty._SY116_CB549022351_.jpg",
+      "imgContentOne": "Books",
+      "imgContentTwo": "Fashion",
+      "imgContentThree": "PC",
+      "imgContentFour": "Beauty",
+      "TitleLinkAnyProducts": "See more"
+    },
+    {
+      "id": 4,
+      "title": "Most-loved watches",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/WomenWatches_1x._SY116_CB564394432_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/MenWatches_1x._SY116_CB564394432_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/GirlWatches_1x._SY116_CB564394432_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/BoyWatches_1x._SY116_CB564394432_.jpg",
+      "imgContentOne": "Women",
+      "imgContentTwo": "Men",
+      "imgContentThree": "Girls",
+      "imgContentFour": "Boys",
+      "TitleLinkAnyProducts": "Discover more"
+    }
+  ],
+  "boxShoppingProductFour": [
+    {
+      "id": 1,
+      "title": "Level up your gaming",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_NW_GamingWeek_PC_v2_1x._SY116_CB558844445_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_NE_GamingWeek_Xbox_v2_1x._SY116_CB558844445_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SW_GamingWeek_Sony_v2_1x._SY116_CB558844445_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SE_GamingWeek_Nintendo_v2_1x._SY116_CB558844445_.jpg",
+      "imgContentOne": "PC gaming",
+      "imgContentTwo": "Xbox",
+      "imgContentThree": "PlayStation",
+      "imgContentFour": "Nintendo Switch",
+      "TitleLinkAnyProducts": "Shop latest in gaming"
+    },
+    {
+      "id": 2,
+      "title": "Level up your PC here",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Laptop._SY116_CB549022351_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_PC._SY116_CB549022351_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Hard_Drives._SY116_CB549022351_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Monitors._SY116_CB549022351_.jpg",
+      "imgContentOne": "Laptops",
+      "imgContentTwo": "PCs",
+      "imgContentThree": "Hard Drives",
+      "imgContentFour": "Monitors",
+      "TitleLinkAnyProducts": "Discover more"
+    },
+    {
+      "id": 3,
+      "title": "Finds for Home",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Kitchen._SY116_CB558654384_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Home_decor._SY116_CB558654384_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Dining._SY116_CB558654384_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Smart_home._SY116_CB558654384_.jpg",
+      "imgContentOne": "Kitchen",
+      "imgContentTwo": "Home Decor",
+      "imgContentThree": "Dining",
+      "imgContentFour": "Smart Home",
+      "TitleLinkAnyProducts": "See more"
+    },
+    {
+      "id": 4,
+      "title": "Home & Kitchen essentials",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/Coffee_Machine._SY116_CB545166645_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/Multi-Cooker_1x._SY116_CB545166645_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/VaccumCleaner_1x._SY116_CB545166645_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/Iron_1x._SY116_CB545166645_.jpg",
+      "imgContentOne": "Coffee Machines",
+      "imgContentTwo": "Multi-cookers",
+      "imgContentThree": "Vacuum Cleaner",
+      "imgContentFour": "Iron and streamer",
+      "TitleLinkAnyProducts": "Shop new"
     }
   ]
 }
