@@ -40,7 +40,8 @@ class Address(models.Model) :
     city = models.CharField(max_length=30)
     full_address = models.TextField()
     postal_code = models.CharField(max_length=10)
-    phone_number = models.CharField(max_length=15)
+    phone_number = models.CharField(max_length=15 , null=True , blank=True)
+    is_default = models.BooleanField(default=False)
     
     def __str__(self):
         return f"{self.user} - {self.country}-{self.province}-{self.city}"
