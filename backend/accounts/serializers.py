@@ -32,13 +32,13 @@ class AddressSerializer(serializers.ModelSerializer) :
         try :
             phone_number = phonenumbers.parse(value)
         except phonenumbers.NumberParseException :
-                raise ValueError("Phone number could be parsed")
+                raise serializers.ValidationError("Phone number could be parsed")
             
         if not phonenumbers.is_possible_number(phone_number) :
-            raise ValueError("Phone Number structure is invalid")
+            raise serializers.ValidationError("Phone Number structure is invalid")
         
         if not phonenumbers.is_valid_number(phone_number) :
-            raise ValueError("Phone number is not valid")
+            raise serializers.ValidationError("Phone number is not valid")
         
         normalize_number = phonenumbers.format_number(phone_number , phonenumbers.PhoneNumberFormat.E164)
         
