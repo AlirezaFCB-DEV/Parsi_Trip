@@ -34,7 +34,7 @@ class OTP (models.Model) :
         return f"{self.identifier} - {self.code}"
     
 class Address(models.Model) :
-    user = models.ForeignKey("User" , on_delete=models.CASCADE , related_name="addresses")
+    owner = models.ForeignKey("User" , on_delete=models.CASCADE , related_name="addresses")
     country = models.CharField(max_length=20)
     province = models.CharField(max_length=30)
     city = models.CharField(max_length=30)

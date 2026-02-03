@@ -11,28 +11,29 @@ class UserSerializer(serializers.ModelSerializer) :
         fields = ["user_fullname" , "email" , "phone_number"]
         
 class AddressSerializer(serializers.ModelSerializer) :
-    user = serializers.PrimaryKeyRelatedField(read_only=True)
+    owner = serializers.PrimaryKeyRelatedField(read_only=True)
     
     class Meta :
         model = Address
         fields = "__all__"
+        read_only_fields= ["phone_number"]
         
     def create(self, validated_data):
-        user = self.context["request"].user
+        owner = self.context["request"].user
         
-        validated_data["phone_number"] = user.phone_number
-        validated_data["user"] = user
+        validated_data["phone_number"] = owner.phone_number
+        validated_data["owner"] = owner
         
-        return super.create(validated_data)
+        return super().create(validated_data)
     
     def validate_phone_number(self,  value : str) :
         if not value.startswith("+") :
-            raise ValueError("Phone number must be in international format (+)")
+            raise serializers.ValidationError("Phone number must be in international format (+)")
         
         try :
             phone_number = phonenumbers.parse(value)
         except phonenumbers.NumberParseException :
-                raise serializers.ValidationError("Phone number could be parsed")
+                raise serializers.ValidationError("Phone number could be not parsed")
             
         if not phonenumbers.is_possible_number(phone_number) :
             raise serializers.ValidationError("Phone Number structure is invalid")
@@ -43,6 +44,3 @@ class AddressSerializer(serializers.ModelSerializer) :
         normalize_number = phonenumbers.format_number(phone_number , phonenumbers.PhoneNumberFormat.E164)
         
         return normalize_number
-        
-        
-            

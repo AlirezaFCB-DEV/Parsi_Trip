@@ -1,12 +1,15 @@
 from django.contrib.auth import authenticate, login
 from rest_framework import status
 from rest_framework.response import Response
+from rest_framework.request import Request
 from rest_framework.decorators import api_view
+from rest_framework import viewsets
+from rest_framework.permissions import IsAuthenticated
 from django.db.models import Q
 
 from .services import is_email, is_phone, otp_generator
-from .models import OTP, User
-from .serializers import UserSerializer
+from .models import OTP, User , Address
+from .serializers import UserSerializer , AddressSerializer
 # Create your views here.
 
 
@@ -108,3 +111,9 @@ def signup_view(req):
     serializer = UserSerializer(user)
     
     return Response({"msg" : "user created successfully" , "user" : serializer.data} , status=status.HTTP_200_OK)
+
+class AddressViewSet(viewsets.ModelViewSet) :
+    queryset = Address.objects.all()
+    serializer_class = AddressSerializer
+    permission_classes= [IsAuthenticated]
+    
