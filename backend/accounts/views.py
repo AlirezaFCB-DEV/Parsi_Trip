@@ -1,12 +1,15 @@
 from django.contrib.auth import authenticate, login
 from rest_framework import status
 from rest_framework.response import Response
+from rest_framework.request import Request
 from rest_framework.decorators import api_view
+from rest_framework import viewsets
+from rest_framework.permissions import IsAuthenticated
 from django.db.models import Q
 
 from .services import is_email, is_phone, otp_generator
-from .models import OTP, User
-from .serializers import UserSerializer
+from .models import OTP, User, Address
+from .serializers import UserSerializer, AddressSerializer
 # Create your views here.
 
 
@@ -99,12 +102,18 @@ def signup_view(req):
         return Response({"error": "you must send a valid phone"}, status=status.HTTP_400_BAD_REQUEST)
     elif len(user_fullname) > 150:
         return Response({"error": "user fullname must be lower than 150 characters"}, status=status.HTTP_400_BAD_REQUEST)
-    elif len(password) <  8:
+    elif len(password) < 8:
         return Response({"error": "password must be longer than 8 characters"}, status=status.HTTP_400_BAD_REQUEST)
 
     user = User.objects.create_user(
         email=email, phone_number=phone_number, user_fullname=user_fullname, password=password)
-    
+
     serializer = UserSerializer(user)
-    
-    return Response({"msg" : "user created successfully" , "user" : serializer.data} , status=status.HTTP_200_OK)
+
+    return Response({"msg": "user created successfully", "user": serializer.data}, status=status.HTTP_200_OK)
+
+
+class AddressViewSet(viewsets.ModelViewSet):
+    queryset = Address.objects.all()
+    serializer_class = AddressSerializer
+    permission_classes = [IsAuthenticated]
