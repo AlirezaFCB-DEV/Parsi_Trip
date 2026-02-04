@@ -11,6 +11,7 @@ class UserSerializer(serializers.ModelSerializer) :
         fields = ["user_fullname" , "email" , "phone_number"]
         
 class AddressSerializer(serializers.ModelSerializer) :
+    
     owner = serializers.PrimaryKeyRelatedField(read_only=True)
     
     class Meta :
@@ -24,7 +25,18 @@ class AddressSerializer(serializers.ModelSerializer) :
         validated_data["phone_number"] = owner.phone_number
         validated_data["owner"] = owner
         
+        if validated_data.get("is_default" , False) :
+            Address.objects.filter(owner=owner , is_default=True).update(is_default=False)
+        
         return super().create(validated_data)
+    
+    def update(self, instance, validated_data):
+        owner = self.context["request"].user
+        
+        if validated_data.get("is_default" , False) :
+            Address.objects.filter(owner=owner , is_default=True).exclude(id=instance.id).update(is_default=False)
+            
+        return super().update(instance, validated_data)
     
     def validate_phone_number(self,  value : str) :
         if not value.startswith("+") :
@@ -44,3 +56,4 @@ class AddressSerializer(serializers.ModelSerializer) :
         normalize_number = phonenumbers.format_number(phone_number , phonenumbers.PhoneNumberFormat.E164)
         
         return normalize_number
+    
