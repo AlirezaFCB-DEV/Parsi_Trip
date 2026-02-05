@@ -5,7 +5,6 @@ from django.contrib.auth import get_user_model
 from .models import Address
 
 class UserSerializer(serializers.ModelSerializer) :
-    
     class Meta:
         model = get_user_model()
         fields = ["user_fullname" , "email" , "phone_number"]
@@ -17,8 +16,7 @@ class AddressSerializer(serializers.ModelSerializer) :
     class Meta :
         model = Address
         fields = "__all__"
-        read_only_fields= ["phone_number"]
-        
+                
     def create(self, validated_data):
         owner = self.context["request"].user
         

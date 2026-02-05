@@ -2,9 +2,9 @@ from django.contrib.auth import authenticate, login
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.request import Request
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view , action
 from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated 
 from django.db.models import Q
 
 from .services import is_email, is_phone, otp_generator
@@ -112,8 +112,25 @@ def signup_view(req):
 
     return Response({"msg": "user created successfully", "user": serializer.data}, status=status.HTTP_200_OK)
 
+class UserViewSet(viewsets.ModelViewSet) :
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    permission_classes = [IsAuthenticated]
+     
+    @action(["GET"] , detail=True )
+    def addresses(self , req : Request , *args , **kwargs) :
+        user = self.get_object()
+        qs = user.addresses.all()
+        
+        serializer = AddressSerializer(qs , many=True)
+        
+        return Response({"addresses" : serializer.data})
+             
 
-class AddressViewSet(viewsets.ModelViewSet):
-    queryset = Address.objects.all()
+class AddressViewSet(viewsets.ModelViewSet):        
     serializer_class = AddressSerializer
     permission_classes = [IsAuthenticated]
+    
+    def get_queryset(self):
+        return Address.objects.filter(owner=self.request.user)
+    
