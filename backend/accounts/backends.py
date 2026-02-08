@@ -1,6 +1,6 @@
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
-from .services import verify_otp
+from ..config.services.verify_otp import verify_otp
 
 from .models import User , OTP
 
