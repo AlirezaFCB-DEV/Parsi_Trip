@@ -8,8 +8,8 @@ from rest_framework.permissions import IsAuthenticated
 from django.db.models import Q
 
 from .services import is_email, is_phone, otp_generator
-from .models import OTP, User, Address
-from .serializers import UserSerializer, AddressSerializer
+from .models import OTP, User
+from .serializers import UserSerializer
 # Create your views here.
 
 
@@ -126,11 +126,3 @@ class UserViewSet(viewsets.ModelViewSet) :
         
         return Response({"addresses" : serializer.data})
              
-
-class AddressViewSet(viewsets.ModelViewSet):        
-    serializer_class = AddressSerializer
-    permission_classes = [IsAuthenticated]
-    
-    def get_queryset(self):
-        return Address.objects.filter(owner=self.request.user)
-    
