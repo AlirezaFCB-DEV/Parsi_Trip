@@ -303,5 +303,17 @@
       "imgContentFour": "Iron and streamer",
       "TitleLinkAnyProducts": "Shop new"
     }
+  ],
+  "mobileGiftCards": [
+    {
+      "id": 1,
+      "title": "Shop gift cards under $50",
+      "imgUrl": "https://m.media-amazon.com/images/I/61btenQCNRL._SR1050,1050_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Try 30 days FREE Amazon Music Unlimited",
+      "imgUrl": "https://m.media-amazon.com/images/I/51u7rqtVYkL._SR1050,1050_.jpg"
+    }
   ]
 }
