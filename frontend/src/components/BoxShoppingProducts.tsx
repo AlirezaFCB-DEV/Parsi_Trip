@@ -7,12 +7,16 @@ import useBoxShoppingProductThree from "@/services/Box-shopping-products/Box-sho
 import useBoxShoppingProductFour from "@/services/Box-shopping-products/Box-shopping-product-four/hook";
 import DesktopBoxShoppingProduct from "./DesktopBoxShoppingProduct";
 import MobileBoxShoppingProduct from "./MobileBoxShoppingProduct";
+import MobileShoppingGiftCard from "./MobileShoppingGiftCard";
+import useMobileGiftCards from "@/services/Mobile-Gift-Cards/hook";
+import IgiftCarditem from "@/services/Mobile-Gift-Cards/types";
 
 function BoxShoppingProducts() {
   const { data: dataOne = [] } = useBoxShoppingProductOne();
   const { data: dataTwo = [] } = useBoxShoppingProductTwo();
   const { data: dataThree = [] } = useBoxShoppingProductThree();
   const { data: dataFour = [] } = useBoxShoppingProductFour();
+  const { data: giftCardsData = [] } = useMobileGiftCards();
 
   return (
     <div>
@@ -53,6 +57,14 @@ function BoxShoppingProducts() {
           <MobileBoxShoppingProduct {...dataTwo[1]} />
 
           <MobileBoxShoppingProduct {...dataTwo[2]} />
+
+          <div className="lg:hidden grid gap-5">
+            {giftCardsData.map((item: IgiftCarditem) => (
+              <MobileShoppingGiftCard key={item.id} {...item} />
+            ))}
+
+            <MobileBoxShoppingProduct {...dataTwo[3]} />
+          </div>
         </div>
       </section>
     </div>
