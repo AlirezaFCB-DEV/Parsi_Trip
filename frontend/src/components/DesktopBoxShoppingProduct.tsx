@@ -1,6 +1,6 @@
 import IboxShoppingProduct from "@/services/Box-shopping-products/types";
 
-function BoxShoppingProduct({
+function DesktopBoxShoppingProduct({
   title,
   imgUrlOne,
   imgUrlTwo,
@@ -57,4 +57,4 @@ function BoxShoppingProduct({
   );
 }
 
-export default BoxShoppingProduct;
+export default DesktopBoxShoppingProduct;
