@@ -45,17 +45,18 @@ function BoxShoppingProducts() {
             <DesktopBoxShoppingProduct key={item.id} {...item} />
           ))}
         </div>
-
       </section>
-        <div className="hidden lg:block w-9/11 mx-auto container">
-            <NewCustomer />
-          </div>
+
+        <div className="hidden xl:block w-full -translate-y-50">
+          <NewCustomer />
+        </div>
 
       <section className="xl:hidden flex flex-col justify-between items-center">
         <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-5">
-          <div className="lg:hidden">
+          <div className="lg:hidden bg-red-500">
             <NewCustomer />
           </div>
+
           {dataOne.map((item: IboxShoppingProduct) => (
             <MobileBoxShoppingProduct key={item.id} {...item} />
           ))}
@@ -69,7 +70,10 @@ function BoxShoppingProducts() {
 
             <MobileBoxShoppingProduct {...dataTwo[3]} />
           </div>
-          ``
+
+          <div className="hidden lg:block">
+            <NewCustomer />
+          </div>
         </div>
       </section>
     </div>
