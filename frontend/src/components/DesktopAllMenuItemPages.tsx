@@ -1,6 +1,5 @@
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import DesktopAllMenuItemPagesItem from "./DesktopAllMenuItemPagesItem";
-import React from "react";
 
 function DesktopAllMenuItemPages({
   HandleDesktopAllMenuItemPage,
