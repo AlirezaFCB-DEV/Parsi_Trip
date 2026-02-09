@@ -10,6 +10,7 @@ import MobileBoxShoppingProduct from "./MobileBoxShoppingProduct";
 import MobileShoppingGiftCard from "./MobileShoppingGiftCard";
 import useMobileGiftCards from "@/services/Mobile-Gift-Cards/hook";
 import IgiftCarditem from "@/services/Mobile-Gift-Cards/types";
+import NewCustomer from "./NewCustomer";
 
 function BoxShoppingProducts() {
   const { data: dataOne = [] } = useBoxShoppingProductOne();
@@ -44,20 +45,23 @@ function BoxShoppingProducts() {
             <DesktopBoxShoppingProduct key={item.id} {...item} />
           ))}
         </div>
+
       </section>
+        <div className="hidden lg:block w-9/11 mx-auto container">
+            <NewCustomer />
+          </div>
 
       <section className="xl:hidden flex flex-col justify-between items-center">
         <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-5">
+          <div className="lg:hidden">
+            <NewCustomer />
+          </div>
           {dataOne.map((item: IboxShoppingProduct) => (
             <MobileBoxShoppingProduct key={item.id} {...item} />
           ))}
-
           <MobileBoxShoppingProduct {...dataTwo[0]} />
-
           <MobileBoxShoppingProduct {...dataTwo[1]} />
-
           <MobileBoxShoppingProduct {...dataTwo[2]} />
-
           <div className="lg:hidden grid gap-5">
             {giftCardsData.map((item: IgiftCarditem) => (
               <MobileShoppingGiftCard key={item.id} {...item} />
@@ -65,6 +69,7 @@ function BoxShoppingProducts() {
 
             <MobileBoxShoppingProduct {...dataTwo[3]} />
           </div>
+          ``
         </div>
       </section>
     </div>
