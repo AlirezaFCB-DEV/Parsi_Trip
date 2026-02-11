@@ -1,7 +1,7 @@
 from datetime import timedelta
 from django.utils import timezone
 
-from ...accounts.models import OTP
+from authentication.models import OTP
 
 def verify_otp(identifier , otp_code) :
         try :

@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "rest_framework",
     "accounts",
-    "Address",
+    "address",
     "authentication",
 ]
 
@@ -132,6 +132,6 @@ STATIC_URL = 'static/'
 
 
 AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend', # بک‌اندر اصلی
-    'accounts.backends.EmailOrPhoneBackend', # مسیر بک‌اندر خودت
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.EmailOrPhoneBackend',
 ]

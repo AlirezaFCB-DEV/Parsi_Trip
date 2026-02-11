@@ -1,8 +1,9 @@
 from django.contrib.auth.backends import ModelBackend
+from django.contrib.auth import get_user_model
 from django.db.models import Q
-from ..config.services.verify_otp import verify_otp
+from config.services.verify_otp import verify_otp
 
-from .models import User , OTP
+User = get_user_model()
 
 class EmailOrPhoneBackend(ModelBackend) :
     def authenticate(self, request, identifier = None , password = None, otp = None , **kwargs):
@@ -24,6 +25,6 @@ class EmailOrPhoneBackend(ModelBackend) :
         
         except User.DoesNotExist :
             return None
-    
+        
     
             
