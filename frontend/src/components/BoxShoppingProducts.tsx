@@ -47,13 +47,13 @@ function BoxShoppingProducts() {
         </div>
       </section>
 
-        <div className="hidden xl:block w-full -translate-y-50">
-          <NewCustomer />
-        </div>
+      <div className="hidden xl:block w-full -translate-y-50">
+        <NewCustomer />
+      </div>
 
       <section className="xl:hidden flex flex-col justify-between items-center">
         <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-5">
-          <div className="lg:hidden bg-red-500">
+          <div className="lg:hidden">
             <NewCustomer />
           </div>
 
