@@ -315,5 +315,194 @@
       "title": "Try 30 days FREE Amazon Music Unlimited",
       "imgUrl": "https://m.media-amazon.com/images/I/51u7rqtVYkL._SR1050,1050_.jpg"
     }
+  ],
+  "homePageFooter": [
+    {
+      "itemOne": [
+        {
+          "id": 1,
+          "headerTitle": "Get to Know Us",
+          "desktopTitle": "Careers",
+          "mobileTitle": "Your Orders"
+        },
+        {
+          "id": 2,
+          "desktopTitle": "Amazon",
+          "mobileTitle": "Your Lists"
+        },
+        {
+          "id": 3,
+          "desktopTitle": "Newsletter",
+          "mobileTitle": "Gift Cards"
+        },
+        {
+          "id": 4,
+          "desktopTitle": "About Amazon",
+          "mobileTitle": "Find a Gift"
+        },
+        {
+          "id": 5,
+          "desktopTitle": "Accessibility",
+          "mobileTitle": "Browsing History"
+        },
+        {
+          "id": 6,
+          "desktopTitle": "Sustainability",
+          "mobileTitle": "Your Returns"
+        },
+        {
+          "id": 7,
+          "desktopTitle": "Press Center"
+        },
+        {
+          "id": 8,
+          "desktopTitle": "Investor Relations"
+        },
+        {
+          "id": 9,
+          "desktopTitle": "Amazon Devices"
+        },
+        {
+          "id": 10,
+          "desktopTitle": "Amazon Science"
+        }
+      ],
+      "itemTwo": [
+        {
+          "id": 1,
+          "headerTitle": "Make Money with Us",
+          "desktopTitle": "Sell on Amazon",
+          "mobileTitle": "Amazon Fresh"
+        },
+        {
+          "id": 2,
+          "desktopTitle": "Sell apps on Amazon",
+          "mobileTitle": "Amazon Live"
+        },
+        {
+          "id": 3,
+          "desktopTitle": "Supply to Amazon",
+          "mobileTitle": "Registery & Gift List"
+        },
+        {
+          "id": 4,
+          "desktopTitle": "Protect & Build Your Brand",
+          "mobileTitle": "Your Account"
+        },
+        {
+          "id": 5,
+          "desktopTitle": "Become an Affiliate",
+          "mobileTitle": "Sell products on Amazon"
+        },
+        {
+          "id": 6,
+          "desktopTitle": "Become a Delivery Driver",
+          "mobileTitle": "Recalls and Product Safety Alert"
+        },
+        {
+          "id": 7,
+          "desktopTitle": "Start a Package Delivery Business",
+          "mobileTitle": "Customer Service"
+        },
+        {
+          "id": 8,
+          "desktopTitle": "Advertise Your Products"
+        },
+        {
+          "id": 9,
+          "desktopTitle": "Self-Publish with Us"
+        },
+        {
+          "id": 10,
+          "desktopTitle": "Become an Amazon Hub Partner"
+        },
+        {
+          "id": 11,
+          "desktopTitle": "›See More Ways to Make Money"
+        }
+      ],
+      "itemThree": [
+        {
+          "id": 1,
+          "headerTitle": "Amazon Payment Products",
+          "desktopTitle": "Amazon Visa"
+        },
+        {
+          "id": 2,
+          "desktopTitle": "Amazon Store Card"
+        },
+        {
+          "id": 3,
+          "desktopTitle": "Amazon Secured Card"
+        },
+        {
+          "id": 4,
+          "desktopTitle": "Amazon Business Card"
+        },
+        {
+          "id": 5,
+          "desktopTitle": "Shop with Points"
+        },
+        {
+          "id": 6,
+          "desktopTitle": "Shop with Points"
+        },
+        {
+          "id": 7,
+          "desktopTitle": "Credit Card Marketplace"
+        },
+        {
+          "id": 8,
+          "desktopTitle": "Reload Your Balance"
+        },
+        {
+          "id": 9,
+          "desktopTitle": "Gift Cards"
+        },
+        {
+          "id": 10,
+          "desktopTitle": "Amazon Currency Converter"
+        }
+      ],
+      "itemFour": [
+        {
+          "id": 1,
+          "headerTitle": "Let Us Help You",
+          "desktopTitle": "Your Account"
+        },
+        {
+          "id": 2,
+          "desktopTitle": "Your Orders"
+        },
+        {
+          "id": 3,
+          "desktopTitle": "Shipping Rates & Policies"
+        },
+        {
+          "id": 4,
+          "desktopTitle": "Amazon Prime"
+        },
+        {
+          "id": 5,
+          "desktopTitle": "Returns & Replacements"
+        },
+        {
+          "id": 6,
+          "desktopTitle": "Manage Your Content and Devices"
+        },
+        {
+          "id": 7,
+          "desktopTitle": "Recalls and Product Safety Alerts"
+        },
+        {
+          "id": 8,
+          "desktopTitle": "Registry & Gift List"
+        },
+        {
+          "id": 9,
+          "desktopTitle": "Help"
+        }
+      ]
+    }
   ]
 }

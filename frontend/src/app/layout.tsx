@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
 import RQProvider from "@/context/RQProvider";
 import ContainerContextProvider from "@/context/container";
 
@@ -18,10 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ContainerContextProvider>
-          <RQProvider>
-            <Header />
-            {children}
-          </RQProvider>
+          <RQProvider>{children}</RQProvider>
         </ContainerContextProvider>
       </body>
     </html>

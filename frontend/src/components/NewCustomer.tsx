@@ -18,7 +18,7 @@ function NewCustomer() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-between items-start xl:items-center w-full p-3 bg-white">
+    <div className="flex flex-col justify-between items-start xl:items-center w-full p-3 bg-white rounded-lg">
       <h1 className="text-xl font-bold mb-5">
         {screenSizing
           ? "See personalized recommendations"
