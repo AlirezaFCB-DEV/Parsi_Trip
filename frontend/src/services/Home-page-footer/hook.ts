@@ -10,5 +10,7 @@ export default function useHomePageFooter() {
 
       return data as IhomePageFooterItem[];
     },
+    staleTime: 360000,
+    refetchInterval: 365000,
   });
 }

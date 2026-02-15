@@ -10,6 +10,8 @@ function useListItems() {
 
       return data as IlistItems[];
     },
+    staleTime: 360000,
+    refetchInterval: 365000,
   });
 }
 

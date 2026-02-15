@@ -48,11 +48,11 @@ function HomePageFooter() {
       <section className="w-full grid grid-cols-2 lg:grid-cols-4 lg:w-250 mx-auto py-5 bg-gray-800">
         <div className="col-span-1 p-5">
           {data?.[0].itemOne.map((item: IoptionItemsValues) => (
-            <div>
+            <div key={item.id}>
               <h2 className={`text-sm font-bold mb-3`}>
                 {screenSize ? null : item.headerTitle}
               </h2>
-              <p className="text-[12px] text-white/80" key={item.id}>
+              <p className="text-[12px] text-white/80">
                 {screenSize ? item.mobileTitle : item.desktopTitle}
               </p>
             </div>
@@ -61,40 +61,40 @@ function HomePageFooter() {
 
         <div className="col-span-1 p-5">
           {data?.[0].itemTwo.map((item: IoptionItemsValues) => (
-            <>
+            <div key={item.id}>
               <h2 className="text-sm font-bold mb-3">
                 {screenSize ? null : item.headerTitle}
               </h2>
-              <p className="text-[12px] text-white/80" key={item.id}>
+              <p className="text-[12px] text-white/80">
                 {screenSize ? item.mobileTitle : item.desktopTitle}
               </p>
-            </>
+            </div>
           ))}
         </div>
 
         <div className={`p-5 ${screenSize ? "hidden" : "col-span-1"}`}>
           {data?.[0].itemThree.map((item: IoptionItemsValues) => (
-            <>
+            <div key={item.id}>
               <h2 className="text-sm font-bold mb-3">
                 {screenSize ? null : item.headerTitle}
               </h2>
-              <p className="text-[12px] text-white/80" key={item.id}>
+              <p className="text-[12px] text-white/80">
                 {screenSize ? item.mobileTitle : item.desktopTitle}
               </p>
-            </>
+            </div>
           ))}
         </div>
 
         <div className={`p-5 ${screenSize ? "hidden" : "col-span-1"}`}>
           {data?.[0].itemFour.map((item: IoptionItemsValues) => (
-            <>
+            <div key={item.id}>
               <h2 className="text-sm font-bold mb-3">
                 {screenSize ? null : item.headerTitle}
               </h2>
-              <p className="text-[12px] text-white/80" key={item.id}>
+              <p className="text-[12px] text-white/80">
                 {screenSize ? item.mobileTitle : item.desktopTitle}
               </p>
-            </>
+            </div>
           ))}
         </div>
       </section>

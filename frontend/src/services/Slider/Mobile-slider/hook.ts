@@ -14,6 +14,8 @@ function useSlider() {
 
       return data as ImobileSlide[];
     },
+    staleTime: 360000,
+    refetchInterval: 365000,
   });
 }
 

@@ -10,5 +10,7 @@ export default function useMobileGiftCards() {
 
       return data as IgiftCarditem[];
     },
+    staleTime: 360000,
+    refetchInterval: 365000,
   });
 }

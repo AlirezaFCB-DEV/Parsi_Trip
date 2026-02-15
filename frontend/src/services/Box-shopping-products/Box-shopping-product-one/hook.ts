@@ -12,5 +12,7 @@ export default function useBoxShoppingProductOne() {
 
       return data as IboxShoppingProduct[];
     },
+    staleTime: 360000,
+    refetchInterval: 365000,
   });
 }

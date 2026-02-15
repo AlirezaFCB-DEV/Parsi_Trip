@@ -12,6 +12,8 @@ function useHeaderOptions() {
 
       return data as IoptionNames[];
     },
+    staleTime: 360000,
+    refetchInterval: 365000,
   });
 }
 

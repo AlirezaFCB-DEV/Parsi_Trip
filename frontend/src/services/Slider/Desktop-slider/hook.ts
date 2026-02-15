@@ -10,5 +10,7 @@ export default function useDesktopSlider() {
 
       return data as IdesktopSlide[];
     },
+    staleTime: 360000,
+    refetchInterval: 365000,
   });
 }
