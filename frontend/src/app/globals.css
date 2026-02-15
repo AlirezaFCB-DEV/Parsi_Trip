@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+/* =============== Colors =============== */
+
+.HeaderMobileColor {
+  background-color: rgb(36, 46, 66);
+}
+
+.HeaderLaptopColor {
+  background-color: rgb(19, 25, 33);
+}
+
+.SearchIconColor {
+  background-color: rgb(243, 168, 71);
+}
+
+/* =============== ScrollBar =============== */
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
