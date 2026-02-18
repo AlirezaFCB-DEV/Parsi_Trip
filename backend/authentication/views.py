@@ -7,6 +7,7 @@ from rest_framework.response import Response
 from accounts.serializers import UserSerializer
 from rest_framework.exceptions import ValidationError
 from config.services.otp_generator import otp_generator
+from .serializers.login_serializer import LoginSerializer
 from .serializers.identifier_serializer import IdentifierSerializer
 from django.contrib.auth import authenticate, login , get_user_model
 
@@ -58,6 +59,28 @@ class OTPSender(APIView) :
 
 #     return Response({"error": error_msg}, status=status.HTTP_400_BAD_REQUEST)
 
+class LoginView(APIView) :
+    def post(self , req : Request) :
+        
+        login_serializer = LoginSerializer(data=req.data)
+        
+        login_serializer.is_valid(raise_exception=True)
+        
+        data = login_serializer.validated_data
+        
+        identifier = (data.get("phone_number") or data.get("email"))
+        password = data.get("password")
+        otp = data.get("otp")
+        
+        auth_result = authenticate(req , identifier = identifier , password=password , otp=otp)
+        
+        if auth_result :
+            return Response({"error" : "Invalid Credentials."} , status=status.HTTP_400_BAD_REQUEST)
+        
+        login(req , auth_result)
+        user_serializer = UserSerializer(auth_result)
+        return Response({"user" : "Logged successfully." , "details" : user_serializer.data})
+            
 
 # @api_view(["POST"])
 # def signup_view(req):
