@@ -1,8 +1,6 @@
 import phonenumbers
 from rest_framework import serializers
 
-from config.services.verify_otp import verify_otp
-
 
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField(required=False)
@@ -35,10 +33,6 @@ class LoginSerializer(serializers.Serializer):
             if not otp:
                 raise serializers.ValidationError(
                     {"otp": "OTP is required for phone number login."})
-
-            elif not verify_otp(phone_number, otp):
-                raise serializers.ValidationError(
-                    "The provided verification code is invalid or has expired.")
 
         return attrs
 

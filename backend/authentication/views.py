@@ -74,7 +74,7 @@ class LoginView(APIView) :
         
         auth_result = authenticate(req , identifier = identifier , password=password , otp=otp)
         
-        if auth_result :
+        if not auth_result :
             return Response({"error" : "Invalid Credentials."} , status=status.HTTP_400_BAD_REQUEST)
         
         login(req , auth_result)
