@@ -1,0 +1,508 @@
+{
+  "headerOptionNames": [
+    { "name": "ALL Department", "id": 2 },
+    { "name": "Arts & craft", "id": 3 },
+    { "name": "Automotive", "id": 4 },
+    { "name": "Baby", "id": 5 },
+    { "name": "Beauty & Personal Care", "id": 6 },
+    { "name": "Books", "id": 7 },
+    { "name": "Boy's Fashion", "id": 8 },
+    { "name": "Computers", "id": 9 },
+    { "name": "Deals", "id": 10 },
+    { "name": "Digital Music", "id": 11 },
+    { "name": "Electronices", "id": 12 },
+    { "name": "Girl's Fashion", "id": 13 },
+    { "name": "Health & Household", "id": 14 },
+    { "name": "Home & Kitchen", "id": 15 },
+    { "name": "Industrial & Scientific", "id": 16 },
+    { "name": "Kindle Store", "id": 17 },
+    { "name": "Luggage", "id": 18 },
+    { "name": "Men's Fashion", "id": 19 },
+    { "name": "Movies & TV", "id": 20 },
+    { "name": "Music , CDs & Vinyl", "id": 21 },
+    { "name": "Pet Supplies", "id": 22 },
+    { "name": "Prime Video", "id": 23 },
+    { "name": "Software", "id": 24 },
+    { "name": "Sports & Outdoors", "id": 25 },
+    { "name": "Tools & Home Improvement", "id": 26 },
+    { "name": "Toys & Games", "id": 27 },
+    { "name": "Video Games", "id": 28 },
+    { "name": "Women's Fashion", "id": 29 }
+  ],
+  "headerListItems": [
+    { "id": 1, "nameOne": "Video", "nameTwo": "All" },
+    { "id": 2, "nameOne": "Deals", "nameTwo": "Today's Deals" },
+    { "id": 3, "nameOne": "Amazon Basics", "nameTwo": "Prime Video" },
+    { "id": 4, "nameOne": "Livestreams", "nameTwo": "Registry" },
+    { "id": 5, "nameOne": "Best Sellers", "nameTwo": "Gift Cards" },
+    { "id": 6, "nameOne": "Books", "nameTwo": "Customer Service" },
+    { "id": 7, "nameOne": "Home", "nameTwo": "Sell" },
+    { "id": 8, "nameOne": "New Releases" },
+    { "id": 9, "nameOne": "Music" },
+    { "id": 10, "nameOne": "PC" }
+  ],
+  "mobileSlider": [
+    {
+      "id": 1,
+      "videoUrl": "https://m.media-amazon.com/images/I/A1QAN0zPY5L.mp4",
+      "title": "Make 2026 your year",
+      "content": "Organize your home under USD 30"
+    },
+    {
+      "id": 2,
+      "videoUrl": "https://m.media-amazon.com/images/I/A1ogEAHnzZL.mp4",
+      "title": "Make 2026 your year",
+      "content": "Shop fitness deals under USD 50"
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://m.media-amazon.com/images/I/51l7ZOsRo7L._SR855,1368_.jpg",
+      "content": "Kitchen must-haves"
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://m.media-amazon.com/images/I/61R7G24e7dL._SR855,1320_.jpg",
+      "content": "Start looking  sharp"
+    },
+    {
+      "id": 5,
+      "imgUrl": "https://m.media-amazon.com/images/I/61Ld77LHXQL._SR855,1320_.jpg",
+      "content": "All things beauty"
+    }
+  ],
+  "desktopSlider": [
+    {
+      "id": 1,
+      "imgUrl": "https://m.media-amazon.com/images/I/71GGl3UpyOL._SX3000_.jpg"
+    },
+    {
+      "id": 2,
+      "imgUrl": "https://m.media-amazon.com/images/I/619geyiQI5L._SX3000_.jpg"
+    },
+    {
+      "id": 3,
+      "imgUrl": "https://m.media-amazon.com/images/I/61Yx5-N155L._SX3000_.jpg"
+    },
+    {
+      "id": 4,
+      "imgUrl": "https://m.media-amazon.com/images/I/71qcoYgEhzL._SX3000_.jpg"
+    }
+  ],
+  "boxShoppingProductOne": [
+    {
+      "id": 1,
+      "title": "Curated vacation looks",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/2x_Desktop_Quad_card_w_title_-_Card_2_V2._SY116_CB771972006_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/1x_Desktop_Quad_card_w_title_-_Card_3_V2._SY116_CB771972006_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/1x_Desktop_Quad_card_w_title_-_Card_4_V2._SY116_CB771972006_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/2x_Desktop_Quad_card_w_title_-_Card_1_V2._SY116_CB771972006_.jpg",
+      "imgContentOne": "Swim",
+      "imgContentTwo": "Beauty",
+      "imgContentThree": "Accessories",
+      "imgContentFour": "Apparel",
+      "TitleLinkAnyProducts": "Shop resort wear"
+    },
+    {
+      "id": 2,
+      "title": "Find your next investment piece",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Trending_Pre-loved_handbags_5_186x116._SY116_CB804224994_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Pre-loved_jewelry_7_186x116._SY116_CB803997880_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Pre-loved_jewelry_6_186x116._SY116_CB803997880_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/fashion/CORE_HP_Trending_Pre-loved_handbags_8_186x116._SY116_CB804224994_.jpg",
+      "imgContentOne": "Chane!",
+      "imgContentTwo": "Van Cleef",
+      "imgContentThree": "Hermes",
+      "imgContentFour": "Fendi",
+      "TitleLinkAnyProducts": "Shop pre-loved handbags & jewelry"
+    },
+    {
+      "id": 3,
+      "title": "Save on Amazon Devices",
+      "imgUrlOne": "https://m.media-amazon.com/images/I/51d4Vzg0EvL._AC_SY145_.jpg",
+      "imgUrlTwo": "https://m.media-amazon.com/images/I/51qKrbelpDL._AC_SY145_.jpg",
+      "imgUrlThree": "https://m.media-amazon.com/images/I/418sgMKHO-L._AC_SY145_.jpg",
+      "imgUrlFour": "https://m.media-amazon.com/images/I/71d-4tL5F1L._AC_SY145_.jpg",
+      "imgContentOne": "Limited time deal",
+      "imgContentTwo": "Limited time deal",
+      "imgContentThree": "Limited time deal",
+      "imgContentFour": "Limited time deal",
+      "TitleLinkAnyProducts": "See more"
+    },
+    {
+      "id": 4,
+      "title": "Shop Saks on Amazon",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/Desktop_QC_TopLeft_Editorial_2_1x._SY116_CB773338092_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/Desktop_QC_TopRight_Editorial_2_1x._SY116_CB773338092_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/Desktop_QC_BottomLeft_Editorial_2_1x._SY116_CB773338092_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2026/Luxury/Desktop_QC_BottomRight_Editorial_2_1x._SY116_CB773338092_.jpg",
+      "imgContentOne": "Coats & jackets",
+      "imgContentTwo": "Beauty",
+      "imgContentThree": "Shoes",
+      "imgContentFour": "HandBags",
+      "TitleLinkAnyProducts": "Shop Saks on Amazon"
+    }
+  ],
+  "boxShoppingProductTwo": [
+    {
+      "id": 1,
+      "title": "Shop Fashion for less",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg",
+      "imgContentOne": "Jeans under $50",
+      "imgContentTwo": "Tops under $25",
+      "imgContentThree": "Deresses under $30",
+      "imgContentFour": "Shoes under $50",
+      "TitleLinkAnyProducts": "see all deals"
+    },
+    {
+      "id": 2,
+      "title": "Fashion trends you like",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_2_x1._SY116_CB595261253_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_3_x1._SY116_CB595261253_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_1_x1._SY116_CB595261253_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2023/LuxuryStores/Spring-23/GW/Quad_Cards/Spring/LSS23_SPRING_DT_CAT_CARD_4_x1._SY116_CB595261253_.jpg",
+      "imgContentOne": "Deresses",
+      "imgContentTwo": "Knits",
+      "imgContentThree": "Jackets",
+      "imgContentFour": "Jewelry",
+      "TitleLinkAnyProducts": "Explore more"
+    },
+    {
+      "id": 3,
+      "title": "Home upgrades under USD 50",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Dining_B_1x._SY116_CB774262527_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Home_B_1x._SY116_CB774262527_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Kitchen_B_1x._SY116_CB774262527_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2026/NYNY25/26_NYNY_DTQuad_Storage_B_1x._SY116_CB774262527_.jpg",
+      "imgContentOne": "Dinnerware",
+      "imgContentTwo": "Home decor",
+      "imgContentThree": "Kitchen",
+      "imgContentFour": "Storage",
+      "TitleLinkAnyProducts": "Score New Year deals"
+    },
+    {
+      "id": 4,
+      "title": "Easy updates for elevated spaces",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_LaundryLuxe_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Kitchen_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_AccentFurniture_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/img18/home/2023/Q2/Homepage/2023Q2_GW_EE_Hallway_D_Quad_186x116._SY116_CB594237035_.jpg",
+      "imgContentOne": "baskets & hampers",
+      "imgContentTwo": "Hardware",
+      "imgContentThree": "Accent furniture",
+      "imgContentFour": "Wallpaper & paint",
+      "TitleLinkAnyProducts": "Shop home products"
+    }
+  ],
+  "boxShoppingProductThree": [
+    {
+      "id": 1,
+      "title": "Level up your beauty routine",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Make-up._SY116_CB558654384_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Brushes._SY116_CB558654384_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Sponges._SY116_CB558654384_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Mirrors._SY116_CB558654384_.jpg",
+      "imgContentOne": "Makeup",
+      "imgContentTwo": "Brushes",
+      "imgContentThree": "Sponges",
+      "imgContentFour": "Mirrors",
+      "TitleLinkAnyProducts": "See more"
+    },
+    {
+      "id": 2,
+      "title": "Gear up to get fit",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Clothing._SY116_CB549022351_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Trackers._SY116_CB549022351_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Equipment._SY116_CB549022351_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Deals_Fitness._SY116_CB549022351_.jpg",
+      "imgContentOne": "Clothing",
+      "imgContentTwo": "Trackers",
+      "imgContentThree": "Equipment",
+      "imgContentFour": "Deals",
+      "TitleLinkAnyProducts": "Discover more"
+    },
+    {
+      "id": 3,
+      "title": "Deals on top categories",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Books._SY116_CB549022351_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Fashion._SY116_CB549022351_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Desktops._SY116_CB549022351_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Beauty._SY116_CB549022351_.jpg",
+      "imgContentOne": "Books",
+      "imgContentTwo": "Fashion",
+      "imgContentThree": "PC",
+      "imgContentFour": "Beauty",
+      "TitleLinkAnyProducts": "See more"
+    },
+    {
+      "id": 4,
+      "title": "Most-loved watches",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/WomenWatches_1x._SY116_CB564394432_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/MenWatches_1x._SY116_CB564394432_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/GirlWatches_1x._SY116_CB564394432_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/BoyWatches_1x._SY116_CB564394432_.jpg",
+      "imgContentOne": "Women",
+      "imgContentTwo": "Men",
+      "imgContentThree": "Girls",
+      "imgContentFour": "Boys",
+      "TitleLinkAnyProducts": "Discover more"
+    }
+  ],
+  "boxShoppingProductFour": [
+    {
+      "id": 1,
+      "title": "Level up your gaming",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_NW_GamingWeek_PC_v2_1x._SY116_CB558844445_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_NE_GamingWeek_Xbox_v2_1x._SY116_CB558844445_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SW_GamingWeek_Sony_v2_1x._SY116_CB558844445_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/CE/GamingWeek24/Homepage/DQC/CE24_SUM_GW_DQC_SE_GamingWeek_Nintendo_v2_1x._SY116_CB558844445_.jpg",
+      "imgContentOne": "PC gaming",
+      "imgContentTwo": "Xbox",
+      "imgContentThree": "PlayStation",
+      "imgContentFour": "Nintendo Switch",
+      "TitleLinkAnyProducts": "Shop latest in gaming"
+    },
+    {
+      "id": 2,
+      "title": "Level up your PC here",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Laptop._SY116_CB549022351_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_PC._SY116_CB549022351_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Hard_Drives._SY116_CB549022351_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/Q1DefectReduction/Fuji_Defect_Reduction_1x_Monitors._SY116_CB549022351_.jpg",
+      "imgContentOne": "Laptops",
+      "imgContentTwo": "PCs",
+      "imgContentThree": "Hard Drives",
+      "imgContentFour": "Monitors",
+      "TitleLinkAnyProducts": "Discover more"
+    },
+    {
+      "id": 3,
+      "title": "Finds for Home",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Kitchen._SY116_CB558654384_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Home_decor._SY116_CB558654384_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Dining._SY116_CB558654384_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Smart_home._SY116_CB558654384_.jpg",
+      "imgContentOne": "Kitchen",
+      "imgContentTwo": "Home Decor",
+      "imgContentThree": "Dining",
+      "imgContentFour": "Smart Home",
+      "TitleLinkAnyProducts": "See more"
+    },
+    {
+      "id": 4,
+      "title": "Home & Kitchen essentials",
+      "imgUrlOne": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/Coffee_Machine._SY116_CB545166645_.jpg",
+      "imgUrlTwo": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/Multi-Cooker_1x._SY116_CB545166645_.jpg",
+      "imgUrlThree": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/VaccumCleaner_1x._SY116_CB545166645_.jpg",
+      "imgUrlFour": "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAUOct2024/Iron_1x._SY116_CB545166645_.jpg",
+      "imgContentOne": "Coffee Machines",
+      "imgContentTwo": "Multi-cookers",
+      "imgContentThree": "Vacuum Cleaner",
+      "imgContentFour": "Iron and streamer",
+      "TitleLinkAnyProducts": "Shop new"
+    }
+  ],
+  "mobileGiftCards": [
+    {
+      "id": 1,
+      "title": "Shop gift cards under $50",
+      "imgUrl": "https://m.media-amazon.com/images/I/61btenQCNRL._SR1050,1050_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Try 30 days FREE Amazon Music Unlimited",
+      "imgUrl": "https://m.media-amazon.com/images/I/51u7rqtVYkL._SR1050,1050_.jpg"
+    }
+  ],
+  "homePageFooter": [
+    {
+      "itemOne": [
+        {
+          "id": 1,
+          "headerTitle": "Get to Know Us",
+          "desktopTitle": "Careers",
+          "mobileTitle": "Your Orders"
+        },
+        {
+          "id": 2,
+          "desktopTitle": "Amazon",
+          "mobileTitle": "Your Lists"
+        },
+        {
+          "id": 3,
+          "desktopTitle": "Newsletter",
+          "mobileTitle": "Gift Cards"
+        },
+        {
+          "id": 4,
+          "desktopTitle": "About Amazon",
+          "mobileTitle": "Find a Gift"
+        },
+        {
+          "id": 5,
+          "desktopTitle": "Accessibility",
+          "mobileTitle": "Browsing History"
+        },
+        {
+          "id": 6,
+          "desktopTitle": "Sustainability",
+          "mobileTitle": "Your Returns"
+        },
+        {
+          "id": 7,
+          "desktopTitle": "Press Center"
+        },
+        {
+          "id": 8,
+          "desktopTitle": "Investor Relations"
+        },
+        {
+          "id": 9,
+          "desktopTitle": "Amazon Devices"
+        },
+        {
+          "id": 10,
+          "desktopTitle": "Amazon Science"
+        }
+      ],
+      "itemTwo": [
+        {
+          "id": 1,
+          "headerTitle": "Make Money with Us",
+          "desktopTitle": "Sell on Amazon",
+          "mobileTitle": "Amazon Fresh"
+        },
+        {
+          "id": 2,
+          "desktopTitle": "Sell apps on Amazon",
+          "mobileTitle": "Amazon Live"
+        },
+        {
+          "id": 3,
+          "desktopTitle": "Supply to Amazon",
+          "mobileTitle": "Registery & Gift List"
+        },
+        {
+          "id": 4,
+          "desktopTitle": "Protect & Build Your Brand",
+          "mobileTitle": "Your Account"
+        },
+        {
+          "id": 5,
+          "desktopTitle": "Become an Affiliate",
+          "mobileTitle": "Sell products on Amazon"
+        },
+        {
+          "id": 6,
+          "desktopTitle": "Become a Delivery Driver",
+          "mobileTitle": "Recalls and Product Safety Alert"
+        },
+        {
+          "id": 7,
+          "desktopTitle": "Start a Package Delivery Business",
+          "mobileTitle": "Customer Service"
+        },
+        {
+          "id": 8,
+          "desktopTitle": "Advertise Your Products"
+        },
+        {
+          "id": 9,
+          "desktopTitle": "Self-Publish with Us"
+        },
+        {
+          "id": 10,
+          "desktopTitle": "Become an Amazon Hub Partner"
+        },
+        {
+          "id": 11,
+          "desktopTitle": "›See More Ways to Make Money"
+        }
+      ],
+      "itemThree": [
+        {
+          "id": 1,
+          "headerTitle": "Amazon Payment Products",
+          "desktopTitle": "Amazon Visa"
+        },
+        {
+          "id": 2,
+          "desktopTitle": "Amazon Store Card"
+        },
+        {
+          "id": 3,
+          "desktopTitle": "Amazon Secured Card"
+        },
+        {
+          "id": 4,
+          "desktopTitle": "Amazon Business Card"
+        },
+        {
+          "id": 5,
+          "desktopTitle": "Shop with Points"
+        },
+        {
+          "id": 6,
+          "desktopTitle": "Shop with Points"
+        },
+        {
+          "id": 7,
+          "desktopTitle": "Credit Card Marketplace"
+        },
+        {
+          "id": 8,
+          "desktopTitle": "Reload Your Balance"
+        },
+        {
+          "id": 9,
+          "desktopTitle": "Gift Cards"
+        },
+        {
+          "id": 10,
+          "desktopTitle": "Amazon Currency Converter"
+        }
+      ],
+      "itemFour": [
+        {
+          "id": 1,
+          "headerTitle": "Let Us Help You",
+          "desktopTitle": "Your Account"
+        },
+        {
+          "id": 2,
+          "desktopTitle": "Your Orders"
+        },
+        {
+          "id": 3,
+          "desktopTitle": "Shipping Rates & Policies"
+        },
+        {
+          "id": 4,
+          "desktopTitle": "Amazon Prime"
+        },
+        {
+          "id": 5,
+          "desktopTitle": "Returns & Replacements"
+        },
+        {
+          "id": 6,
+          "desktopTitle": "Manage Your Content and Devices"
+        },
+        {
+          "id": 7,
+          "desktopTitle": "Recalls and Product Safety Alerts"
+        },
+        {
+          "id": 8,
+          "desktopTitle": "Registry & Gift List"
+        },
+        {
+          "id": 9,
+          "desktopTitle": "Help"
+        }
+      ]
+    }
+  ]
+}
