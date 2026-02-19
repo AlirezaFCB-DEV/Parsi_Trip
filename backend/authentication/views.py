@@ -5,11 +5,12 @@ from rest_framework.views import APIView
 from rest_framework.request import Request
 from rest_framework.response import Response
 from accounts.serializers import UserSerializer
+from rest_framework.generics import CreateAPIView
 from config.services.otp_generator import otp_generator
 from .serializers.login_serializer import LoginSerializer
+from .serializers.signup_serializer import SignupSerializer
 from .serializers.identifier_serializer import IdentifierSerializer
 from django.contrib.auth import authenticate, login , get_user_model
-
 
 User = get_user_model()
 
@@ -50,34 +51,11 @@ class LoginView(APIView) :
         user_serializer = UserSerializer(auth_result)
         return Response({"user" : "Logged successfully." , "details" : user_serializer.data})
 
-# @api_view(["POST"])
-# def signup_view(req):
-#     email = req.data.get("email")
-#     phone_number = req.data.get("phone_number")
-#     user_fullname = req.data.get("user_fullname")
-#     password = req.data.get("password")
-
-#     if not email:
-#         return Response({"error": "you must send email"}, status=status.HTTP_400_BAD_REQUEST)
-#     elif not phone_number:
-#         return Response({"error": "you must send phone number"}, status=status.HTTP_400_BAD_REQUEST)
-#     elif not user_fullname:
-#         return Response({"error": "you must send user fullname"}, status=status.HTTP_400_BAD_REQUEST)
-#     elif not password:
-#         return Response({"error": "you must send password"}, status=status.HTTP_400_BAD_REQUEST)
-
-#     if not is_email(email):
-#         return Response({"error": "you must send a valid email"}, status=status.HTTP_400_BAD_REQUEST)
-#     elif not is_phone(phone_number):
-#         return Response({"error": "you must send a valid phone"}, status=status.HTTP_400_BAD_REQUEST)
-#     elif len(user_fullname) > 150:
-#         return Response({"error": "user fullname must be lower than 150 characters"}, status=status.HTTP_400_BAD_REQUEST)
-#     elif len(password) < 8:
-#         return Response({"error": "password must be longer than 8 characters"}, status=status.HTTP_400_BAD_REQUEST)
-
-#     user = User.objects.create_user(
-#         email=email, phone_number=phone_number, user_fullname=user_fullname, password=password)
-
-#     serializer = UserSerializer(user)
-
-#     return Response({"msg": "user created successfully", "user": serializer.data}, status=status.HTTP_200_OK)
+class SignupView(CreateAPIView) :
+    serializer_class = SignupSerializer
+    
+    def perform_create(self, serializer):
+        user = serializer.save()
+        
+        login(self.request , user , backend=".backends.email_or_phone.EmailOrPhoneBackend")
+        
