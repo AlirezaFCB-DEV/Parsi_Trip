@@ -2,13 +2,13 @@
 
 import { useContainerContext } from "@/context/container";
 
-function SigninInMobileSize() {
+function SigninInMobileAndDesktopSize() {
   const { isTrueSigninForm, HandleSiginForm } = useContainerContext();
 
   return (
     <>
       <section
-        className={`flex justify-start items-center ${isTrueSigninForm ? "bg-white" : "bg-gray-200 border-b border-gray-300"} py-3 px-5`}
+        className={`flex justify-start items-center ${isTrueSigninForm ? "bg-white" : "bg-gray-200 border-b border-gray-300"} py-3 px-5 lg:hidden`}
       >
         <input
           type="radio"
@@ -27,6 +27,10 @@ function SigninInMobileSize() {
           <p className="text-[13px] font-light ml-2">Already a Customer?</p>
         </label>
       </section>
+
+      <h2 className="hidden lg:block mx-6 mt-5 text-xl font-light">
+        Sign in or create account
+      </h2>
 
       <div className={`${isTrueSigninForm ? "block" : "hidden"}`}>
         <section className="w-full flex flex-col justify-between items-start px-5 py-3">
@@ -58,7 +62,7 @@ function SigninInMobileSize() {
             .
           </p>
 
-          <p className="px-5 py-5 border-b border-gray-300">
+          <p className="py-4 border-b border-gray-300 w-full">
             Buying for work?
             <br />
             <span className="text-blue-600 font-light">
@@ -71,4 +75,4 @@ function SigninInMobileSize() {
   );
 }
 
-export default SigninInMobileSize;
+export default SigninInMobileAndDesktopSize;
