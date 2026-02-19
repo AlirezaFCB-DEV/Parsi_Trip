@@ -4,4 +4,5 @@ from . import views
 urlpatterns = [
     path("send-otp/" , views.OTPSender.as_view()),
     path("login/" , views.LoginView.as_view()),
+    path("signup/" , views.SignupView.as_view()),
 ]
