@@ -1,5 +1,11 @@
-import HomePageFooter from "@/components/homePageFooter";
+// "use client"
+
 import SignIninMobileSize from "@/components/CreateAccountinMobileSize";
+import SigninInMobileSize from "@/components/Signin-inMobileSize";
+
+// =============== Material IU Icons ===============
+
+import LanguageIcon from "@mui/icons-material/Language";
 
 function SignIn() {
   return (
@@ -17,22 +23,48 @@ function SignIn() {
 
           {/* =============== Sign in in Mobile Size =============== */}
 
-          <section className="flex justify-start items-center border-b border-gray-300 py-3 px-5">
-            <input type="radio" id="signin-btn" className="scale-150" />
-
-            <label
-              htmlFor="signin-btn"
-              className="flex justify-between items-center text-sm ml-5"
-            >
-              Sign in
-              <p className="text-[13px] font-light ml-2">Already a Customer?</p>
-            </label>
-          </section>
+          <SigninInMobileSize />
         </form>
       </main>
 
       <footer>
-        <HomePageFooter />
+        <section className="w-full flex flex-col justify-between items-center bg-gray-950 text-white">
+          <div className="w-55 my-15 flex justify-between items-center">
+            <div className="flex justify-between items-center text-sm">
+              <LanguageIcon fontSize="small" className="mr-2" />
+
+              <p>English</p>
+            </div>
+
+            <div className="flex justify-between items-center text-sm">
+              <LanguageIcon fontSize="small" className="mr-2" />
+
+              <p>United States</p>
+            </div>
+          </div>
+
+          <p className="mb-5">
+            Already a customer?<span> Sign in</span>
+          </p>
+
+          <div className="flex flex-col justify-between items-center text-[10px] text-white/70">
+            <div className="flex justify-between items-center gap-5">
+              <p>Conditions of Use</p>
+
+              <p>Privacy Notice</p>
+            </div>
+
+            <div className="flex justify-between items-center gap-5">
+              <p>Consumer Health Data Privacy</p>
+
+              <p>Your Ads Privacy Choices</p>
+            </div>
+          </div>
+
+          <p className="text-white/80 mt-5 mb-15 text-center text-[10px]">
+            © 1996-2026, Amazon.com, Inc. or its affiliates
+          </p>
+        </section>
       </footer>
     </div>
   );
