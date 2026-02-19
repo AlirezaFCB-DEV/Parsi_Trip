@@ -4,7 +4,7 @@ from rest_framework import serializers
 
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField(required=False)
-    phone_number = serializers.CharField(max_length=30, required=False)
+    phone_number = serializers.CharField(max_length=15, required=False)
     otp = serializers.RegexField(regex=r"^\d{6}$", required=False, error_messages={
                                  "invalid": "Enter a valid 6-digits verification code."})
     password = serializers.CharField(

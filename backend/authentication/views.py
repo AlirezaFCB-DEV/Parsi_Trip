@@ -5,7 +5,6 @@ from rest_framework.views import APIView
 from rest_framework.request import Request
 from rest_framework.response import Response
 from accounts.serializers import UserSerializer
-from rest_framework.exceptions import ValidationError
 from config.services.otp_generator import otp_generator
 from .serializers.login_serializer import LoginSerializer
 from .serializers.identifier_serializer import IdentifierSerializer
@@ -29,36 +28,6 @@ class OTPSender(APIView) :
             "sender_identifier" :identifier , "code" : otp.code
         }} , status=201)
         
-# @api_view(["POST"])
-# def login_view(req):
-#     identifier = req.data.get("identifier")
-#     otp = req.data.get("otp")
-#     password = req.data.get("password")
-
-#     if not identifier:
-#         return Response({"error": "Identifier is required!"}, status=status.HTTP_400_BAD_REQUEST)
-
-#     if not otp and not password:
-#         return Response({"error": "Either OTP or password is required"}, status=status.HTTP_400_BAD_REQUEST)
-
-#     if not (is_email(identifier) or is_phone(identifier)):
-#         return Response({"error": "Identifier must be a valid email or phone."}, status=status.HTTP_400_BAD_REQUEST)
-
-#     if otp:
-#         auth_result = authenticate(req, identifier=identifier, otp=otp)
-#         error_msg = "Invalid OTP"
-#     else:
-#         auth_result = authenticate(
-#             req, identifier=identifier, password=password)
-#         error_msg = "Invalid Password"
-
-#     if auth_result:
-#         login(req, auth_result)
-#         serializer = UserSerializer(auth_result)
-#         return Response({"msg": "user logged successfully", "user": serializer.data}, status=status.HTTP_200_OK)
-
-#     return Response({"error": error_msg}, status=status.HTTP_400_BAD_REQUEST)
-
 class LoginView(APIView) :
     def post(self , req : Request) :
         
@@ -80,7 +49,6 @@ class LoginView(APIView) :
         login(req , auth_result)
         user_serializer = UserSerializer(auth_result)
         return Response({"user" : "Logged successfully." , "details" : user_serializer.data})
-            
 
 # @api_view(["POST"])
 # def signup_view(req):
