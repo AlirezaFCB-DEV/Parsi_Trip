@@ -11,6 +11,7 @@ import PlaceIcon from "@mui/icons-material/Place";
 import HeaderSearchBar from "./HeaderSearchBar";
 import HeaderListitems from "./HeaderListItem";
 import { useContainerContext } from "@/context/container";
+import Link from "next/link";
 
 function NabBar() {
   const { HandleIsOpenList } = useContainerContext();
@@ -38,18 +39,20 @@ function NabBar() {
         </section>
 
         <section className="flex justify-between items-center xl:w-70">
-          <div className="flex justify-between items-center mr-5 cursor-pointer">
-            <p className="text-[13px] xl:hidden">Sign in {`>`}</p>
+          <Link href="/signIn">
+            <div className="flex justify-between items-center mr-5 cursor-pointer">
+              <p className="text-[13px] xl:hidden">Sign in {`>`}</p>
 
-            <p className="text-[13px] hidden xl:flex items-center">
-              Hello,sign in Account & Lists
-              <ArrowDropDownIcon />
-            </p>
+              <p className="text-[13px] hidden xl:flex items-center">
+                Hello,sign in Account & Lists
+                <ArrowDropDownIcon />
+              </p>
 
-            <div className="block xl:hidden">
-              <PermIdentityIcon fontSize="large" />
+              <div className="block xl:hidden">
+                <PermIdentityIcon fontSize="large" />
+              </div>
             </div>
-          </div>
+          </Link>
 
           <p className="text-[13px] w-15 hidden xl:block mr-5">
             <span>Returns</span> <span className="font-bold">&Orders</span>
