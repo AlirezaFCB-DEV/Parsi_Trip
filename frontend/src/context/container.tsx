@@ -9,6 +9,11 @@ interface IcontainerContext {
   desktopAllMenuItemPage: boolean;
   setDesktopAllMenuItemPage: React.Dispatch<React.SetStateAction<boolean>>;
   HandleDesktopAllMenuItemPages: () => void;
+
+  isTrueSigninForm: boolean;
+  isTrueCreateNewCustomerForm: boolean;
+  HandleSiginForm: () => void;
+  HandleCreateNewCustomerForm: () => void;
 }
 
 const containerContext = createContext({} as IcontainerContext);
@@ -33,6 +38,30 @@ function ContainerContextProvider({ children }: { children: React.ReactNode }) {
     setDesktopAllMenuItemPage((prev) => !prev);
   };
 
+  // =============== Sigin And Login Page ===============
+
+  const [isTrueSigninForm, setIsTrueSigninForm] = useState<boolean>(true);
+  const [isTrueCreateNewCustomerForm, setIsTrueCreateNewCustomerForm] =
+    useState<boolean>(false);
+
+  const HandleSiginForm = () => {
+    setIsTrueSigninForm((prev) => {
+      return !prev ? true : false;
+    });
+    setIsTrueCreateNewCustomerForm((prev) => {
+      return prev ? false : true;
+    });
+  };
+
+  const HandleCreateNewCustomerForm = () => {
+    setIsTrueCreateNewCustomerForm((prev) => {
+      return !prev ? true : false;
+    });
+    setIsTrueSigninForm((prev) => {
+      return prev ? false : true;
+    });
+  };
+
   return (
     <containerContext.Provider
       value={{
@@ -41,6 +70,10 @@ function ContainerContextProvider({ children }: { children: React.ReactNode }) {
         desktopAllMenuItemPage,
         setDesktopAllMenuItemPage,
         HandleDesktopAllMenuItemPages,
+        isTrueSigninForm,
+        isTrueCreateNewCustomerForm,
+        HandleCreateNewCustomerForm,
+        HandleSiginForm,
       }}
     >
       {children}

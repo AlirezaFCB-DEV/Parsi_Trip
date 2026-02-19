@@ -45,7 +45,7 @@ function HomePageFooter() {
         </Link>
       </section>
 
-      <section className="w-full grid grid-cols-2 lg:grid-cols-4 lg:w-250 mx-auto py-5 bg-gray-800">
+      <section className="w-full grid grid-cols-2 lg:grid-cols-4 mx-auto py-5 bg-gray-800">
         <div className="col-span-1 p-5">
           {data?.[0].itemOne.map((item: IoptionItemsValues) => (
             <div key={item.id}>
