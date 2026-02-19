@@ -1,9 +1,11 @@
 "use client";
 
 import { useContainerContext } from "@/context/container";
+import { useState } from "react";
 
 function SigninInMobileAndDesktopSize() {
   const { isTrueSigninForm, HandleSiginForm } = useContainerContext();
+  const [emailIpt, setEmailIpt] = useState<string>();
 
   return (
     <>
@@ -42,6 +44,7 @@ function SigninInMobileAndDesktopSize() {
             type="text"
             id="user-numberOrEmail"
             className="w-full rounded border p-2.5 border-gray-500"
+            onChange={(e) => setEmailIpt(e.target.value)}
           />
         </section>
 
