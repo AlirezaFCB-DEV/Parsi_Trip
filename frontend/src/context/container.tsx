@@ -40,18 +40,26 @@ function ContainerContextProvider({ children }: { children: React.ReactNode }) {
 
   // =============== Sigin And Login Page ===============
 
-  const [isTrueSigninForm, setIsTrueSigninForm] = useState<boolean>(false);
+  const [isTrueSigninForm, setIsTrueSigninForm] = useState<boolean>(true);
   const [isTrueCreateNewCustomerForm, setIsTrueCreateNewCustomerForm] =
     useState<boolean>(false);
 
   const HandleSiginForm = () => {
-    setIsTrueSigninForm(true);
-    setIsTrueCreateNewCustomerForm(false);
+    setIsTrueSigninForm((prev) => {
+      return !prev ? true : false;
+    });
+    setIsTrueCreateNewCustomerForm((prev) => {
+      return prev ? false : true;
+    });
   };
 
   const HandleCreateNewCustomerForm = () => {
-    setIsTrueCreateNewCustomerForm(true);
-    setIsTrueSigninForm(false);
+    setIsTrueCreateNewCustomerForm((prev) => {
+      return !prev ? true : false;
+    });
+    setIsTrueSigninForm((prev) => {
+      return prev ? false : true;
+    });
   };
 
   return (

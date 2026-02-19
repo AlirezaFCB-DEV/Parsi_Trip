@@ -8,11 +8,13 @@ function CreateAccountinMobileSize() {
 
   return (
     <>
-      <section className="flex justify-start items-center border-b border-gray-300 py-3 px-5">
+      <section
+        className={`flex justify-start items-center ${isTrueCreateNewCustomerForm ? "bg-white" : "bg-gray-200 border-b border-gray-300"} py-3 px-5`}
+      >
         <input
           type="radio"
           id="create-account"
-          name="create-account"
+          name="user-options-for-enter"
           className="scale-150"
           defaultChecked={isTrueCreateNewCustomerForm}
           onClick={() => HandleCreateNewCustomerForm()}
