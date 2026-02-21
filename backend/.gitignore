@@ -35,3 +35,6 @@ staticfiles/
 # IDE/editor files
 .idea/
 .vscode/
+
+#development files
+db.json
