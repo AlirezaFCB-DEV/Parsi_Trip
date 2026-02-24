@@ -44,3 +44,24 @@ class ProductAttribute(models.Model) :
     def __str__(self):
         return self.label
     
+class Category(models.Model) :
+    title = models.CharField(max_length=255)
+    slug = models.SlugField(max_length=255,unique=True)
+    
+    parent = models.ForeignKey("self" , null=True , blank=True, related_name="children" , on_delete=models.CASCADE)
+    
+    
+    description = models.TextField(blank=True)
+    image = models.ImageField(upload_to="categories/" , null=True ,blank=True)
+    
+    is_active = models.BooleanField(default=True)
+    display_order = models.IntegerField(default=0)
+    
+    created_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
+    
+    class Meta :
+        ordering = ["display_order , title"]
+    
+    def __str__(self):
+        return self.title
